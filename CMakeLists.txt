@@ -7,7 +7,7 @@ project(tum_ardrone)
 
 ## Find catkin macros and libraries
 find_package(catkin REQUIRED COMPONENTS
-  ardrone_autonomy
+	#ardrone_autonomy
   cv_bridge
   dynamic_reconfigure
   geometry_msgs
@@ -18,6 +18,9 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
 )
+
+set(CMAKE_CXX_FLAGS "-fPIC")
+set(ardrone_autonomyConfig_DIR "/home/mylxiaoyi/study/ardrone_autonomy/build/devel/share/ardrone_autonomy/cmake")
 
 # Compile third party libs
 include(ExternalProject)
@@ -131,11 +134,14 @@ include_directories(
   ${CMAKE_BINARY_DIR}/thirdparty/src/thirdparty/TooN/include 
   ${CMAKE_BINARY_DIR}/thirdparty/src/thirdparty/libcvd/include 
   ${CMAKE_BINARY_DIR}/thirdparty/src/thirdparty/gvars3/include 
+  "/home/mylxiaoyi/study/ardrone_autonomy/include"
+  "/home/mylxiaoyi/study/ardrone_autonomy/build/devel/include"
 )  
 
 link_directories(
   ${CMAKE_BINARY_DIR}/thirdparty/src/thirdparty/libcvd/lib 
   ${CMAKE_BINARY_DIR}/thirdparty/src/thirdparty/gvars3/lib 
+  "/home/mylxiaoyi/source/ros_catkin_ws/install_isolated/lib"
 )
 set(PTAM_LIBRARIES GL glut cvd GVars3 blas lapack)
 add_definitions(-DKF_REPROJ)
@@ -143,7 +149,7 @@ add_definitions(-DKF_REPROJ)
 # build!
 add_executable(drone_stateestimation ${STATEESTIMATION_SOURCE_FILES} ${STATEESTIMATION_HEADER_FILES})
 set_target_properties(drone_stateestimation PROPERTIES COMPILE_FLAGS "-D_LINUX -D_REENTRANT -Wall  -O3 -march=nocona -msse3") 
-target_link_libraries(drone_stateestimation ${PTAM_LIBRARIES} ${catkin_LIBRARIES})
+target_link_libraries(drone_stateestimation ${PTAM_LIBRARIES} ${catkin_LIBRARIES} roslib tf)
 add_dependencies(drone_stateestimation thirdparty ${PROJECT_NAME}_gencpp ${PROJECT_NAME}_gencfg)
 
 # ------------------------- autopilot & KI -----------------------------------------
@@ -167,7 +173,7 @@ set(AUTOPILOT_HEADER_FILES
 
 # build!
 add_executable(drone_autopilot ${AUTOPILOT_SOURCE_FILES} ${AUTOPILOT_HEADER_FILES})
-target_link_libraries(drone_autopilot ${catkin_LIBRARIES})
+target_link_libraries(drone_autopilot ${catkin_LIBRARIES} roslib)
 add_dependencies(drone_autopilot thirdparty ${PROJECT_NAME}_gencpp ${PROJECT_NAME}_gencfg)
 
 # ---------------------------- GUI --------------------------------------------------
@@ -196,16 +202,22 @@ set(GUI_RESOURCE_FILES
 
 # do QT stuff
 ADD_DEFINITIONS( -Wall )
-find_package(Qt4 REQUIRED)
-include(${QT_USE_FILE})
-QT4_ADD_RESOURCES(GUI_RESOURCE_FILES_CPP ${GUI_RESOURCE_FILES})
-QT4_WRAP_UI(GUI_UI_FILES_HPP ${GUI_UI_FILES})
-QT4_WRAP_CPP(GUI_HEADER_FILES_HPP ${GUI_HEADER_FILES})
-include_directories(${CMAKE_CURRENT_BINARY_DIR})
+find_package(Qt5 COMPONENTS OpenGL)
+#include(${QT5_USE_FILE})
+QT5_ADD_RESOURCES(GUI_RESOURCE_FILES_CPP ${GUI_RESOURCE_FILES})
+QT5_WRAP_UI(GUI_UI_FILES_HPP ${GUI_UI_FILES})
+QT5_WRAP_CPP(GUI_HEADER_FILES_HPP ${GUI_HEADER_FILES})
+include_directories(${CMAKE_CURRENT_BINARY_DIR}
+	"/usr/include/x86_64-linux-gnu/qt5"
+	"/usr/include/x86_64-linux-gnu/qt5/QtOpenGL"
+	"/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
+	"/usr/include/x86_64-linux-gnu/qt5/QtGui"
+	"/usr/include/x86_64-linux-gnu/qt5/QtCore"
+	"/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport")
 
 # build!
 add_executable(drone_gui ${GUI_SOURCE_FILES} ${GUI_RESOURCE_FILES_CPP} ${GUI_UI_FILES_HPP} ${GUI_HEADER_FILES_HPP})
-target_link_libraries(drone_gui ${QT_LIBRARIES} cvd ${catkin_LIBRARIES})
+target_link_libraries(drone_gui Qt5Core Qt5Widgets Qt5Gui Qt5OpenGL Qt5Test Qt5Concurrent Qt5PrintSupport cvd ${catkin_LIBRARIES} roslib)
 add_dependencies(drone_gui thirdparty ${PROJECT_NAME}_gencpp ${PROJECT_NAME}_gencfg)
 
 
