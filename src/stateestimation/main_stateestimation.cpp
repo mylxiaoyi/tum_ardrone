@@ -20,7 +20,7 @@
  
 #include "EstimationNode.h"
 #include "ros/ros.h"
-#include "PTAMWrapper.h"
+#include "PTAMMWrapper.h"
 #include "MapView.h"
 
 
@@ -43,13 +43,13 @@ int main(int argc, char **argv)
   f = boost::bind(&EstimationNode::dynConfCb, &estimator, _1, _2);
   srv.setCallback(f);
 
-  estimator.ptamWrapper->startSystem();
+  estimator.ptammWrapper->startSystem();
   estimator.mapView->startSystem();
 
   estimator.Loop();
 
   estimator.mapView->stopSystem();
-  estimator.ptamWrapper->stopSystem();
+  estimator.ptammWrapper->stopSystem();
 
   return 0;
 }

@@ -53,7 +53,7 @@ ControlNode::ControlNode()
     land_channel = nh_.resolveName("ardrone/land");
     toggleState_channel = nh_.resolveName("ardrone/reset");
 
-	packagePath = ros::package::getPath("tum_ardrone");
+    packagePath = ros::package::getPath("my_ardrone");
 
 	std::string val;
 	float valFloat;

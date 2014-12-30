@@ -40,7 +40,7 @@
 
 class DroneKalmanFilter;
 class MapView;
-class PTAMWrapper;
+class PTAMMWrapper;
 
 struct EstimationNode
 {
@@ -93,7 +93,7 @@ private:
 public:
 	// filter
 	DroneKalmanFilter* filter;
-	PTAMWrapper* ptamWrapper;
+    PTAMMWrapper* ptammWrapper;
 	MapView* mapView;
 	std::string packagePath;
 

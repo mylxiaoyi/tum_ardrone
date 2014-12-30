@@ -1,0 +1,655 @@
+<?xml version="1.0" ?>
+<PTAMM_Map version="1.0">
+    <KeyFrames size="2">
+        <KeyFrame id="0" pose="0.704238 5.44201 5.37136 1.56706 -0.262671 -0.265994" fixed="1">
+            <Image file="KeyFrames/000000.png" md5="f94423557423d9a2a8f50047ba4eced9" />
+            <Camera name="Camera" size="640 480" params="1.38372 1.83507 0.521345 0.629213 0.1831" />
+            <SceneDepth mean="8.098916" sigma="3.138849" />
+            <Measurements size="70">
+                <Measurement id="20" nLevel="0" bSubPix="1" v2RootPos="400 400" v2ImplanePos="0.0752793 0.111511" m2CamDerivs="887.77 -0.167431 -0.166533 882.876" source="2" />
+                <Measurement id="9" nLevel="0" bSubPix="1" v2RootPos="178 362" v2ImplanePos="-0.174787 0.0684949" m2CamDerivs="887.103 0.238622 0.237343 882.86" source="2" />
+                <Measurement id="10" nLevel="0" bSubPix="1" v2RootPos="412 277" v2ImplanePos="0.0887852 -0.0277647" m2CamDerivs="887.82 0.0491861 0.0489224 883.202" source="2" />
+                <Measurement id="7" nLevel="0" bSubPix="1" v2RootPos="342 405" v2ImplanePos="0.00995489 0.117167" m2CamDerivs="887.923 -0.023268 -0.0231433 882.893" source="2" />
+                <Measurement id="12" nLevel="0" bSubPix="1" v2RootPos="484 428" v2ImplanePos="0.169946 0.143267" m2CamDerivs="886.995 -0.485009 -0.482409 882.406" source="2" />
+                <Measurement id="1" nLevel="0" bSubPix="1" v2RootPos="321 368" v2ImplanePos="-0.0136945 0.0752654" m2CamDerivs="888.001 0.0205684 0.0204581 883.132" source="2" />
+                <Measurement id="11" nLevel="0" bSubPix="1" v2RootPos="488 440" v2ImplanePos="0.174464 0.15687" m2CamDerivs="886.908 -0.545053 -0.542131 882.269" source="2" />
+                <Measurement id="4" nLevel="0" bSubPix="1" v2RootPos="403 276" v2ImplanePos="0.0786483 -0.0288964" m2CamDerivs="887.87 0.0453493 0.0451062 883.216" source="2" />
+                <Measurement id="23" nLevel="0" bSubPix="1" v2RootPos="260 308" v2ImplanePos="-0.0823888 0.00733413" m2CamDerivs="887.86 0.0120575 0.0119929 883.234" source="2" />
+                <Measurement id="8" nLevel="0" bSubPix="1" v2RootPos="422 277" v2ImplanePos="0.100049 -0.0277654" m2CamDerivs="887.756 0.0554227 0.0551256 883.18" source="2" />
+                <Measurement id="24" nLevel="0" bSubPix="1" v2RootPos="106 313" v2ImplanePos="-0.255982 0.0130037" m2CamDerivs="886.104 0.0662652 0.06591 882.648" source="2" />
+                <Measurement id="25" nLevel="0" bSubPix="1" v2RootPos="469 407" v2ImplanePos="0.153026 0.119463" m2CamDerivs="887.221 -0.364334 -0.362381 882.646" source="2" />
+                <Measurement id="0" nLevel="0" bSubPix="1" v2RootPos="306 371" v2ImplanePos="-0.0305868 0.0786631" m2CamDerivs="887.974 0.0480109 0.0477536 883.109" source="2" />
+                <Measurement id="13" nLevel="0" bSubPix="1" v2RootPos="421 273" v2ImplanePos="0.098923 -0.0322944" m2CamDerivs="887.76 0.0637375 0.0633958 883.175" source="2" />
+                <Measurement id="3" nLevel="0" bSubPix="1" v2RootPos="423 270" v2ImplanePos="0.101176 -0.0356914" m2CamDerivs="887.744 0.0720444 0.0716582 883.163" source="2" />
+                <Measurement id="21" nLevel="0" bSubPix="1" v2RootPos="383 366" v2ImplanePos="0.0561266 0.0730032" m2CamDerivs="887.916 -0.0817565 -0.0813182 883.113" source="2" />
+                <Measurement id="14" nLevel="0" bSubPix="1" v2RootPos="410 277" v2ImplanePos="0.0865325 -0.0277646" m2CamDerivs="887.831 0.0479386 0.0476817 883.205" source="2" />
+                <Measurement id="18" nLevel="0" bSubPix="1" v2RootPos="416 277" v2ImplanePos="0.0932907 -0.0277649" m2CamDerivs="887.795 0.0516808 0.0514038 883.193" source="2" />
+                <Measurement id="15" nLevel="0" bSubPix="1" v2RootPos="338 405" v2ImplanePos="0.00545 0.117167" m2CamDerivs="887.925 -0.0127386 -0.0126703 882.894" source="2" />
+                <Measurement id="16" nLevel="0" bSubPix="1" v2RootPos="423 266" v2ImplanePos="0.101177 -0.0402206" m2CamDerivs="887.741 0.081186 0.0807508 883.153" source="2" />
+                <Measurement id="6" nLevel="0" bSubPix="1" v2RootPos="422 275" v2ImplanePos="0.100049 -0.0300299" m2CamDerivs="887.755 0.0599428 0.0596215 883.177" source="2" />
+                <Measurement id="2" nLevel="0" bSubPix="1" v2RootPos="302 394" v2ImplanePos="-0.0350933 0.10471" m2CamDerivs="887.917 0.0733091 0.0729161 882.964" source="2" />
+                <Measurement id="17" nLevel="0" bSubPix="1" v2RootPos="338 403" v2ImplanePos="0.00544997 0.114902" m2CamDerivs="887.931 -0.0124925 -0.0124255 882.909" source="2" />
+                <Measurement id="19" nLevel="0" bSubPix="1" v2RootPos="178 365" v2ImplanePos="-0.174788 0.0718929" m2CamDerivs="887.098 0.250456 0.249114 882.846" source="2" />
+                <Measurement id="5" nLevel="0" bSubPix="1" v2RootPos="406 275" v2ImplanePos="0.0820273 -0.0300288" m2CamDerivs="887.853 0.0491499 0.0488865 883.209" source="2" />
+                <Measurement id="22" nLevel="0" bSubPix="1" v2RootPos="486 431" v2ImplanePos="0.172203 0.146668" m2CamDerivs="886.962 -0.503081 -0.500384 882.369" source="2" />
+                <Measurement id="26" nLevel="0" bSubPix="1" v2RootPos="304 407" v2ImplanePos="-0.0328421 0.119434" m2CamDerivs="887.889 0.0782434 0.077824 882.867" source="2" />
+                <Measurement id="27" nLevel="0" bSubPix="1" v2RootPos="187 426" v2ImplanePos="-0.164671 0.140997" m2CamDerivs="887.054 0.462555 0.460075 882.443" source="2" />
+                <Measurement id="28" nLevel="0" bSubPix="1" v2RootPos="255 423" v2ImplanePos="-0.088039 0.137568" m2CamDerivs="887.643 0.241482 0.240188 882.663" source="2" />
+                <Measurement id="29" nLevel="0" bSubPix="1" v2RootPos="260 310" v2ImplanePos="-0.0823888 0.00959854" m2CamDerivs="887.859 0.0157802 0.0156956 883.233" source="2" />
+                <Measurement id="30" nLevel="0" bSubPix="1" v2RootPos="291 407" v2ImplanePos="-0.0474838 0.119435" m2CamDerivs="887.853 0.113122 0.112516 882.856" source="2" />
+                <Measurement id="31" nLevel="0" bSubPix="1" v2RootPos="312 369" v2ImplanePos="-0.0238297 0.0763981" m2CamDerivs="887.988 0.0363287 0.036134 883.123" source="2" />
+                <Measurement id="32" nLevel="0" bSubPix="1" v2RootPos="394 296" v2ImplanePos="0.0685114 -0.00625214" m2CamDerivs="887.922 0.00854809 0.00850227 883.255" source="2" />
+                <Measurement id="33" nLevel="0" bSubPix="1" v2RootPos="413 269" v2ImplanePos="0.0899121 -0.0368228" m2CamDerivs="887.808 0.0660587 0.0657046 883.182" source="2" />
+                <Measurement id="34" nLevel="0" bSubPix="1" v2RootPos="394 288" v2ImplanePos="0.0685115 -0.0153096" m2CamDerivs="887.92 0.0209315 0.0208193 883.249" source="2" />
+                <Measurement id="35" nLevel="0" bSubPix="1" v2RootPos="395 293" v2ImplanePos="0.0696376 -0.00964869" m2CamDerivs="887.917 0.0134087 0.0133368 883.252" source="2" />
+                <Measurement id="36" nLevel="0" bSubPix="1" v2RootPos="387 359" v2ImplanePos="0.0606308 0.0650772" m2CamDerivs="887.911 -0.0787307 -0.0783086 883.14" source="2" />
+                <Measurement id="37" nLevel="0" bSubPix="1" v2RootPos="177 356" v2ImplanePos="-0.175913 0.0616992" m2CamDerivs="887.1 0.216335 0.215176 882.883" source="2" />
+                <Measurement id="38" nLevel="0" bSubPix="1" v2RootPos="451 407" v2ImplanePos="0.13274 0.119456" m2CamDerivs="887.394 -0.316089 -0.314394 882.703" source="2" />
+                <Measurement id="39" nLevel="0" bSubPix="1" v2RootPos="449 365" v2ImplanePos="0.130473 0.071882" m2CamDerivs="887.502 -0.18703 -0.186027 882.98" source="2" />
+                <Measurement id="40" nLevel="0" bSubPix="1" v2RootPos="181 360" v2ImplanePos="-0.171405 0.0662286" m2CamDerivs="887.141 0.226275 0.225062 882.881" source="2" />
+                <Measurement id="41" nLevel="0" bSubPix="1" v2RootPos="486 445" v2ImplanePos="0.172212 0.162536" m2CamDerivs="886.914 -0.557428 -0.55444 882.223" source="2" />
+                <Measurement id="42" nLevel="0" bSubPix="1" v2RootPos="409 280" v2ImplanePos="0.085406 -0.0243678" m2CamDerivs="887.839 0.0415266 0.041304 883.213" source="2" />
+                <Measurement id="43" nLevel="0" bSubPix="1" v2RootPos="98 316" v2ImplanePos="-0.265012 0.0164035" m2CamDerivs="885.963 0.0865214 0.0860576 882.599" source="2" />
+                <Measurement id="44" nLevel="0" bSubPix="1" v2RootPos="181 353" v2ImplanePos="-0.171403 0.0583002" m2CamDerivs="887.151 0.199193 0.198125 882.91" source="2" />
+                <Measurement id="45" nLevel="0" bSubPix="1" v2RootPos="334 400" v2ImplanePos="0.00094511 0.111504" m2CamDerivs="887.939 -0.00210239 -0.00209112 882.933" source="2" />
+                <Measurement id="46" nLevel="0" bSubPix="1" v2RootPos="201 270" v2ImplanePos="-0.148858 -0.0356962" m2CamDerivs="887.388 -0.105961 -0.105393 883.045" source="2" />
+                <Measurement id="47" nLevel="0" bSubPix="1" v2RootPos="188 353" v2ImplanePos="-0.163513 0.0582985" m2CamDerivs="887.23 0.190038 0.18902 882.936" source="2" />
+                <Measurement id="48" nLevel="0" bSubPix="1" v2RootPos="377 413" v2ImplanePos="0.0493751 0.126232" m2CamDerivs="887.831 -0.124312 -0.123646 882.804" source="2" />
+                <Measurement id="49" nLevel="0" bSubPix="1" v2RootPos="397 403" v2ImplanePos="0.0719007 0.114908" m2CamDerivs="887.777 -0.164787 -0.163903 882.858" source="2" />
+                <Measurement id="50" nLevel="0" bSubPix="1" v2RootPos="96 316" v2ImplanePos="-0.267269 0.0164037" m2CamDerivs="885.927 0.0872554 0.0867877 882.587" source="2" />
+                <Measurement id="51" nLevel="0" bSubPix="1" v2RootPos="388 296" v2ImplanePos="0.0617541 -0.00625208" m2CamDerivs="887.949 0.00770519 0.00766389 883.264" source="2" />
+                <Measurement id="52" nLevel="0" bSubPix="1" v2RootPos="414 411" v2ImplanePos="0.0910528 0.123974" m2CamDerivs="887.662 -0.225097 -0.223891 882.763" source="2" />
+                <Measurement id="53" nLevel="0" bSubPix="1" v2RootPos="200 273" v2ImplanePos="-0.149985 -0.032299" m2CamDerivs="887.38 -0.0966014 -0.0960836 883.049" source="2" />
+                <Measurement id="54" nLevel="0" bSubPix="1" v2RootPos="181 351" v2ImplanePos="-0.171403 0.056035" m2CamDerivs="887.153 0.191455 0.190429 882.918" source="2" />
+                <Measurement id="55" nLevel="0" bSubPix="1" v2RootPos="360 412" v2ImplanePos="0.0302278 0.125097" m2CamDerivs="887.88 -0.0754262 -0.0750219 882.828" source="2" />
+                <Measurement id="56" nLevel="0" bSubPix="1" v2RootPos="336 301" v2ImplanePos="0.00320603 -0.000592893" m2CamDerivs="885.581 0 -0 880.834" source="2" />
+                <Measurement id="57" nLevel="0" bSubPix="1" v2RootPos="382 412" v2ImplanePos="0.0550067 0.1251" m2CamDerivs="887.817 -0.137248 -0.136512 882.807" source="2" />
+                <Measurement id="58" nLevel="0" bSubPix="1" v2RootPos="458 464" v2ImplanePos="0.140659 0.184054" m2CamDerivs="887.134 -0.515624 -0.51286 882.1" source="2" />
+                <Measurement id="59" nLevel="0" bSubPix="1" v2RootPos="481 419" v2ImplanePos="0.166559 0.133066" m2CamDerivs="887.057 -0.441568 -0.439201 882.501" source="2" />
+                <Measurement id="60" nLevel="0" bSubPix="1" v2RootPos="83 327" v2ImplanePos="-0.281947 0.0288698" m2CamDerivs="885.681 0.161943 0.161075 882.49" source="2" />
+                <Measurement id="61" nLevel="0" bSubPix="1" v2RootPos="172 364" v2ImplanePos="-0.181552 0.0707622" m2CamDerivs="887.028 0.256033 0.25466 882.827" source="2" />
+                <Measurement id="62" nLevel="0" bSubPix="1" v2RootPos="410 417" v2ImplanePos="0.0865484 0.13077" m2CamDerivs="887.669 -0.225682 -0.224472 882.72" source="2" />
+                <Measurement id="63" nLevel="0" bSubPix="1" v2RootPos="281 415" v2ImplanePos="-0.0587486 0.128499" m2CamDerivs="887.795 0.150559 0.149752 882.777" source="2" />
+                <Measurement id="64" nLevel="0" bSubPix="1" v2RootPos="604 409" v2ImplanePos="0.305347 0.121825" m2CamDerivs="885.134 -0.739256 -0.735293 881.939" source="2" />
+                <Measurement id="65" nLevel="0" bSubPix="1" v2RootPos="91 317" v2ImplanePos="-0.272913 0.0175373" m2CamDerivs="885.836 0.0952436 0.0947331 882.555" source="2" />
+                <Measurement id="66" nLevel="0" bSubPix="1" v2RootPos="176 409" v2ImplanePos="-0.177062 0.12174" m2CamDerivs="886.978 0.429447 0.427145 882.551" source="2" />
+                <Measurement id="67" nLevel="0" bSubPix="1" v2RootPos="183 415" v2ImplanePos="-0.169174 0.128535" m2CamDerivs="887.043 0.433234 0.430911 882.528" source="2" />
+                <Measurement id="68" nLevel="0" bSubPix="1" v2RootPos="462 463" v2ImplanePos="0.145168 0.182923" m2CamDerivs="887.1 -0.528862 -0.526027 882.099" source="2" />
+                <Measurement id="69" nLevel="0" bSubPix="1" v2RootPos="93 317" v2ImplanePos="-0.270656 0.0175371" m2CamDerivs="885.872 0.0944591 0.0939527 882.568" source="2" />
+            </Measurements>
+        </KeyFrame>
+        <KeyFrame id="1" pose="0.793612 5.44632 5.35815 1.56295 -0.248342 -0.285633" fixed="0">
+            <Image file="KeyFrames/000001.png" md5="41bbe449fc8e4ec575c7b375b37ce7a9" />
+            <Camera name="Camera" size="640 480" params="1.38372 1.83507 0.521345 0.629213 0.1831" />
+            <SceneDepth mean="8.101084" sigma="3.147121" />
+            <Measurements size="70">
+                <Measurement id="20" nLevel="0" bSubPix="1" v2RootPos="420.782 399.882" v2ImplanePos="0.0986905 0.111382" m2CamDerivs="887.648 -0.219211 -0.218036 882.837" source="3" />
+                <Measurement id="9" nLevel="0" bSubPix="1" v2RootPos="199.206 362.279" v2ImplanePos="-0.150885 0.0688052" m2CamDerivs="887.335 0.206989 0.205879 882.936" source="3" />
+                <Measurement id="10" nLevel="0" bSubPix="1" v2RootPos="432.49 276.809" v2ImplanePos="0.111866 -0.0279821" m2CamDerivs="887.681 0.0624459 0.0621112 883.155" source="3" />
+                <Measurement id="7" nLevel="0" bSubPix="1" v2RootPos="362.616 404.909" v2ImplanePos="0.0331729 0.117065" m2CamDerivs="887.894 -0.0774663 -0.0770511 882.884" source="3" />
+                <Measurement id="12" nLevel="0" bSubPix="1" v2RootPos="505.355 427.965" v2ImplanePos="0.194025 0.143241" m2CamDerivs="886.734 -0.553434 -0.550467 882.32" source="3" />
+                <Measurement id="1" nLevel="0" bSubPix="1" v2RootPos="341.315 368.212" v2ImplanePos="0.00918298 0.0755052" m2CamDerivs="888.004 -0.0138363 -0.0137621 883.132" source="3" />
+                <Measurement id="11" nLevel="0" bSubPix="1" v2RootPos="509.691 439.941" v2ImplanePos="0.198924 0.156819" m2CamDerivs="886.636 -0.621041 -0.617712 882.18" source="3" />
+                <Measurement id="4" nLevel="0" bSubPix="1" v2RootPos="423.541 275.761" v2ImplanePos="0.101785 -0.0291688" m2CamDerivs="887.745 0.0592333 0.0589158 883.175" source="3" />
+                <Measurement id="23" nLevel="0" bSubPix="1" v2RootPos="280.17 308.317" v2ImplanePos="-0.0596722 0.00769276" m2CamDerivs="887.956 0.00916118 0.00911207 883.266" source="3" />
+                <Measurement id="8" nLevel="0" bSubPix="1" v2RootPos="442.634 276.608" v2ImplanePos="0.123294 -0.028211" m2CamDerivs="887.6 0.069381 0.0690091 883.128" source="3" />
+                <Measurement id="24" nLevel="0" bSubPix="1" v2RootPos="127.29 313.605" v2ImplanePos="-0.231961 0.0136872" m2CamDerivs="886.453 0.0632326 0.0628937 882.764" source="3" />
+                <Measurement id="25" nLevel="0" bSubPix="1" v2RootPos="490.827 407.018" v2ImplanePos="0.177631 0.119495" m2CamDerivs="886.978 -0.422887 -0.42062 882.565" source="3" />
+                <Measurement id="0" nLevel="0" bSubPix="1" v2RootPos="326.435 371.088" v2ImplanePos="-0.00757404 0.0787619" m2CamDerivs="888 0.011904 0.0118402 883.117" source="3" />
+                <Measurement id="13" nLevel="0" bSubPix="1" v2RootPos="441.644 272.682" v2ImplanePos="0.122179 -0.0326567" m2CamDerivs="887.606 0.0795879 0.0791613 883.123" source="3" />
+                <Measurement id="3" nLevel="0" bSubPix="1" v2RootPos="443.532 269.526" v2ImplanePos="0.124306 -0.0362297" m2CamDerivs="887.588 0.0898304 0.0893488 883.11" source="3" />
+                <Measurement id="21" nLevel="0" bSubPix="1" v2RootPos="403.553 365.954" v2ImplanePos="0.0792754 0.0729532" m2CamDerivs="887.822 -0.115382 -0.114764 883.082" source="3" />
+                <Measurement id="14" nLevel="0" bSubPix="1" v2RootPos="430.549 276.816" v2ImplanePos="0.10968 -0.0279741" m2CamDerivs="887.695 0.0612093 0.0608812 883.16" source="3" />
+                <Measurement id="18" nLevel="0" bSubPix="1" v2RootPos="436.491 276.756" v2ImplanePos="0.116374 -0.0280427" m2CamDerivs="887.65 0.0651003 0.0647513 883.145" source="3" />
+                <Measurement id="15" nLevel="0" bSubPix="1" v2RootPos="358.689 404.879" v2ImplanePos="0.0287504 0.117031" m2CamDerivs="887.902 -0.06712 -0.0667602 882.887" source="3" />
+                <Measurement id="16" nLevel="0" bSubPix="1" v2RootPos="443.514 265.562" v2ImplanePos="0.124287 -0.040719" m2CamDerivs="887.584 0.100945 0.100403 883.1" source="3" />
+                <Measurement id="6" nLevel="0" bSubPix="1" v2RootPos="442.668 274.668" v2ImplanePos="0.123333 -0.0304072" m2CamDerivs="887.599 0.0748052 0.0744042 883.124" source="3" />
+                <Measurement id="2" nLevel="0" bSubPix="1" v2RootPos="322.889 394.426" v2ImplanePos="-0.0115683 0.105191" m2CamDerivs="887.949 0.024278 0.0241479 882.972" source="3" />
+                <Measurement id="17" nLevel="0" bSubPix="1" v2RootPos="358.674 402.796" v2ImplanePos="0.0287336 0.114672" m2CamDerivs="887.907 -0.0657296 -0.0653772 882.903" source="3" />
+                <Measurement id="19" nLevel="0" bSubPix="1" v2RootPos="199.09 365.259" v2ImplanePos="-0.151017 0.0721805" m2CamDerivs="887.329 0.217327 0.216162 882.921" source="3" />
+                <Measurement id="5" nLevel="0" bSubPix="1" v2RootPos="426.509 274.823" v2ImplanePos="0.105129 -0.0302312" m2CamDerivs="887.723 0.0634058 0.0630659 883.166" source="3" />
+                <Measurement id="22" nLevel="0" bSubPix="1" v2RootPos="507.454 431.004" v2ImplanePos="0.196395 0.146688" m2CamDerivs="886.696 -0.573626 -0.570551 882.281" source="3" />
+                <Measurement id="26" nLevel="0" bSubPix="1" v2RootPos="324.689 406.676" v2ImplanePos="-0.00954118 0.119065" m2CamDerivs="887.919 0.0226618 0.0225404 882.88" source="3" />
+                <Measurement id="27" nLevel="0" bSubPix="1" v2RootPos="208.09 426.173" v2ImplanePos="-0.140898 0.141182" m2CamDerivs="887.271 0.39641 0.394285 882.513" source="3" />
+                <Measurement id="28" nLevel="0" bSubPix="1" v2RootPos="275.748 422.823" v2ImplanePos="-0.0646664 0.137362" m2CamDerivs="887.75 0.177133 0.176184 882.7" source="3" />
+                <Measurement id="29" nLevel="0" bSubPix="1" v2RootPos="280.055 310.19" v2ImplanePos="-0.0598023 0.0098137" m2CamDerivs="887.955 0.0117124 0.0116497 883.264" source="3" />
+                <Measurement id="30" nLevel="0" bSubPix="1" v2RootPos="312.066 406.858" v2ImplanePos="-0.0237582 0.119272" m2CamDerivs="887.904 0.0565265 0.0562234 882.874" source="3" />
+                <Measurement id="31" nLevel="0" bSubPix="1" v2RootPos="332.93 369.052" v2ImplanePos="-0.000260038 0.0764567" m2CamDerivs="888.005 0.000396744 0.000394617 883.129" source="3" />
+                <Measurement id="32" nLevel="0" bSubPix="1" v2RootPos="414.187 295.818" v2ImplanePos="0.0912475 -0.00645794" m2CamDerivs="887.814 0.0117579 0.0116948 883.219" source="3" />
+                <Measurement id="33" nLevel="0" bSubPix="1" v2RootPos="433.478 268.42" v2ImplanePos="0.112979 -0.037482" m2CamDerivs="887.667 0.0844762 0.0840233 883.134" source="3" />
+                <Measurement id="34" nLevel="0" bSubPix="1" v2RootPos="414.442 287.676" v2ImplanePos="0.0915348 -0.0156771" m2CamDerivs="887.81 0.0286326 0.0284791 883.212" source="3" />
+                <Measurement id="35" nLevel="0" bSubPix="1" v2RootPos="415.176 293.002" v2ImplanePos="0.0923613 -0.00964661" m2CamDerivs="887.807 0.0177776 0.0176823 883.215" source="3" />
+                <Measurement id="36" nLevel="0" bSubPix="1" v2RootPos="407.237 358.858" v2ImplanePos="0.0834236 0.0649183" m2CamDerivs="887.813 -0.108049 -0.10747 883.108" source="3" />
+                <Measurement id="37" nLevel="0" bSubPix="1" v2RootPos="198.042 356.05" v2ImplanePos="-0.152196 0.06175" m2CamDerivs="887.332 0.187382 0.186377 882.959" source="3" />
+                <Measurement id="38" nLevel="0" bSubPix="1" v2RootPos="471.699 406.877" v2ImplanePos="0.156068 0.119326" m2CamDerivs="887.193 -0.371135 -0.369146 882.638" source="3" />
+                <Measurement id="39" nLevel="0" bSubPix="1" v2RootPos="470.513 364.8" v2ImplanePos="0.154716 0.0716614" m2CamDerivs="887.296 -0.22104 -0.219855 882.913" source="3" />
+                <Measurement id="40" nLevel="0" bSubPix="1" v2RootPos="202.332 360.098" v2ImplanePos="-0.147363 0.0663344" m2CamDerivs="887.37 0.194907 0.193863 882.956" source="3" />
+                <Measurement id="41" nLevel="0" bSubPix="1" v2RootPos="507.638 445.077" v2ImplanePos="0.196613 0.16264" m2CamDerivs="886.645 -0.636586 -0.633174 882.134" source="3" />
+                <Measurement id="42" nLevel="0" bSubPix="1" v2RootPos="429.833 280.083" v2ImplanePos="0.108873 -0.0242746" m2CamDerivs="887.703 0.0527245 0.0524419 883.168" source="3" />
+                <Measurement id="43" nLevel="0" bSubPix="1" v2RootPos="119.059 316.853" v2ImplanePos="-0.241247 0.0173681" m2CamDerivs="886.321 0.0834349 0.0829877 882.717" source="3" />
+                <Measurement id="44" nLevel="0" bSubPix="1" v2RootPos="201.964 353.382" v2ImplanePos="-0.147776 0.0587278" m2CamDerivs="887.376 0.173046 0.172119 882.983" source="3" />
+                <Measurement id="45" nLevel="0" bSubPix="1" v2RootPos="354.36 400.231" v2ImplanePos="0.0238747 0.111766" m2CamDerivs="887.922 -0.0532326 -0.0529472 882.925" source="3" />
+                <Measurement id="46" nLevel="0" bSubPix="1" v2RootPos="221.296 270.303" v2ImplanePos="-0.125989 -0.0353505" m2CamDerivs="887.576 -0.0888357 -0.0883595 883.108" source="3" />
+                <Measurement id="47" nLevel="0" bSubPix="1" v2RootPos="208.847 353.509" v2ImplanePos="-0.140019 0.0588702" m2CamDerivs="887.442 0.164376 0.163495 883.005" source="3" />
+                <Measurement id="48" nLevel="0" bSubPix="1" v2RootPos="397.736 412.995" v2ImplanePos="0.0727319 0.12623" m2CamDerivs="887.746 -0.183094 -0.182113 882.776" source="3" />
+                <Measurement id="49" nLevel="0" bSubPix="1" v2RootPos="418.15 402.852" v2ImplanePos="0.0957253 0.114745" m2CamDerivs="887.658 -0.219044 -0.21787 882.82" source="3" />
+                <Measurement id="50" nLevel="0" bSubPix="1" v2RootPos="117.015 316.839" v2ImplanePos="-0.243553 0.0173522" m2CamDerivs="886.288 0.0841515 0.0837004 882.706" source="3" />
+                <Measurement id="51" nLevel="0" bSubPix="1" v2RootPos="408.43 295.775" v2ImplanePos="0.0847636 -0.00650664" m2CamDerivs="887.848 0.0110053 0.0109463 883.23" source="3" />
+                <Measurement id="52" nLevel="0" bSubPix="1" v2RootPos="435.028 411.025" v2ImplanePos="0.114744 0.124009" m2CamDerivs="887.516 -0.283691 -0.28217 882.715" source="3" />
+                <Measurement id="53" nLevel="0" bSubPix="1" v2RootPos="220.713 273.483" v2ImplanePos="-0.126645 -0.0317497" m2CamDerivs="887.573 -0.0802029 -0.079773 883.114" source="3" />
+                <Measurement id="54" nLevel="0" bSubPix="1" v2RootPos="201.91 351.387" v2ImplanePos="-0.147836 0.056468" m2CamDerivs="887.378 0.166458 0.165566 882.991" source="3" />
+                <Measurement id="55" nLevel="0" bSubPix="1" v2RootPos="380.887 412.145" v2ImplanePos="0.0537529 0.125263" m2CamDerivs="887.82 -0.134295 -0.133575 882.807" source="3" />
+                <Measurement id="56" nLevel="0" bSubPix="1" v2RootPos="356.52 300.978" v2ImplanePos="0.0263033 -0.000616304" m2CamDerivs="888.043 0.000323559 0.000321824 883.296" source="3" />
+                <Measurement id="57" nLevel="0" bSubPix="1" v2RootPos="402.903 412.023" v2ImplanePos="0.0785524 0.12513" m2CamDerivs="887.722 -0.196019 -0.194968 882.776" source="3" />
+                <Measurement id="58" nLevel="0" bSubPix="1" v2RootPos="479.519 463.947" v2ImplanePos="0.164919 0.18401" m2CamDerivs="886.913 -0.60423 -0.600991 882.027" source="3" />
+                <Measurement id="59" nLevel="0" bSubPix="1" v2RootPos="502.334 418.859" v2ImplanePos="0.190612 0.132919" m2CamDerivs="886.801 -0.504602 -0.501897 882.417" source="3" />
+                <Measurement id="60" nLevel="0" bSubPix="1" v2RootPos="104.573 328.042" v2ImplanePos="-0.257594 0.0300465" m2CamDerivs="886.072 0.154067 0.153241 882.618" source="3" />
+                <Measurement id="61" nLevel="0" bSubPix="1" v2RootPos="193.127 364.329" v2ImplanePos="-0.157737 0.0711284" m2CamDerivs="887.269 0.223672 0.222473 882.905" source="3" />
+                <Measurement id="62" nLevel="0" bSubPix="1" v2RootPos="430.99 416.974" v2ImplanePos="0.110196 0.130747" m2CamDerivs="887.53 -0.287241 -0.285701 882.674" source="3" />
+                <Measurement id="63" nLevel="0" bSubPix="1" v2RootPos="301.822 414.841" v2ImplanePos="-0.0352957 0.128315" m2CamDerivs="887.862 0.0903335 0.0898493 882.8" source="3" />
+                <Measurement id="64" nLevel="0" bSubPix="1" v2RootPos="625.942 408.686" v2ImplanePos="0.330143 0.121491" m2CamDerivs="884.667 -0.79659 -0.79232 881.786" source="3" />
+                <Measurement id="65" nLevel="0" bSubPix="1" v2RootPos="112.564 317.825" v2ImplanePos="-0.248576 0.0184692" m2CamDerivs="886.214 0.0914065 0.0909165 882.68" source="3" />
+                <Measurement id="66" nLevel="0" bSubPix="1" v2RootPos="197.017 409.111" v2ImplanePos="-0.153371 0.121856" m2CamDerivs="887.212 0.372456 0.37046 882.628" source="3" />
+                <Measurement id="67" nLevel="0" bSubPix="1" v2RootPos="204.584 415.128" v2ImplanePos="-0.144844 0.128669" m2CamDerivs="887.271 0.37143 0.369438 882.602" source="3" />
+                <Measurement id="68" nLevel="0" bSubPix="1" v2RootPos="484.033 463.096" v2ImplanePos="0.170008 0.183048" m2CamDerivs="886.866 -0.619582 -0.61626 882.02" source="3" />
+                <Measurement id="69" nLevel="0" bSubPix="1" v2RootPos="114.602 317.832" v2ImplanePos="-0.246276 0.0184776" m2CamDerivs="886.248 0.090606 0.0901203 882.691" source="3" />
+            </Measurements>
+        </KeyFrame>
+    </KeyFrames>
+    <KeyFrameQueue size="0" />
+    <MapPoints size="70">
+        <MapPoint id="0" position="-0.5478 2.05169 -0.588419" outlierCount="0" inlierCount="398">
+            <SourceKF id="0" level="0" x="306" y="371" Center_NC="-0.0304784 0.0783844 0.996457" OneDownFromCenter_NC="-0.0304757 0.0795057 0.996368" OneRightFromCenter_NC="-0.0293572 0.078387 0.996491" Normal_NC="0 0 -1" PixelDown_W="-0.0033454 -0.000127462 -0.00956883" PixelRight_W="0.00951748 6.72845e-09 -0.0033263" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="1" position="-0.449333 3.34001 -0.711517" outlierCount="0" inlierCount="401">
+            <SourceKF id="0" level="0" x="321" y="368" Center_NC="-0.0136546 0.0750461 0.997087" OneDownFromCenter_NC="-0.0136535 0.0761687 0.997001" OneRightFromCenter_NC="-0.012532 0.0750472 0.997101" Normal_NC="0 0 -1" PixelDown_W="-0.00382673 -0.000145814 -0.0109467" PixelRight_W="0.0108877 3.22119e-09 -0.00380554" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="2" position="-0.458039 -0.797785 -0.512522" outlierCount="0" inlierCount="457">
+            <SourceKF id="0" level="0" x="302" y="394" Center_NC="-0.0348812 0.104077 0.993957" OneDownFromCenter_NC="-0.0348772 0.10519 0.99384" OneRightFromCenter_NC="-0.0337631 0.104081 0.993996" Normal_NC="0 0 -1" PixelDown_W="-0.00228078 -8.68921e-05 -0.0065231" PixelRight_W="0.00648757 7.02108e-09 -0.00226716" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="3" position="0.676459 -0.140169 0.0147663" outlierCount="0" inlierCount="455">
+            <SourceKF id="0" level="0" x="423" y="270" Center_NC="0.100599 -0.0354877 0.994294" OneDownFromCenter_NC="0.100603 -0.0343633 0.994333" OneRightFromCenter_NC="0.101707 -0.0354838 0.994181" Normal_NC="0 0 -1" PixelDown_W="-0.00252185 -9.60773e-05 -0.00721266" PixelRight_W="0.00717645 7.79851e-09 -0.00250789" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="4" position="0.481868 -0.589808 0.0258924" outlierCount="0" inlierCount="434">
+            <SourceKF id="0" level="0" x="403" y="276" Center_NC="0.0783737 -0.0287955 0.996508" OneDownFromCenter_NC="0.0783762 -0.0276681 0.99654" OneRightFromCenter_NC="0.079489 -0.028793 0.99642" Normal_NC="0 0 -1" PixelDown_W="-0.00235375 -8.96808e-05 -0.00673253" PixelRight_W="0.00669804 4.58866e-09 -0.00234093" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="5" position="0.522077 -0.374901 0.0230623" outlierCount="0" inlierCount="420">
+            <SourceKF id="0" level="0" x="406" y="275" Center_NC="0.0817162 -0.0299149 0.996207" OneDownFromCenter_NC="0.0817188 -0.0287879 0.99624" OneRightFromCenter_NC="0.0828305 -0.0299122 0.996115" Normal_NC="0 0 -1" PixelDown_W="-0.00243404 -9.27388e-05 -0.00696209" PixelRight_W="0.00692652 5.1414e-09 -0.00242075" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="6" position="0.57926 -0.911688 -0.00647945" outlierCount="0" inlierCount="451">
+            <SourceKF id="0" level="0" x="422" y="275" Center_NC="0.0995079 -0.0298674 0.994588" OneDownFromCenter_NC="0.0995111 -0.0287422 0.994621" OneRightFromCenter_NC="0.100617 -0.0298641 0.994477" Normal_NC="0 0 -1" PixelDown_W="-0.0022337 -8.51025e-05 -0.00638879" PixelRight_W="0.00635668 5.74766e-09 -0.00222151" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="7" position="-0.292177 1.2538 -0.933077" outlierCount="0" inlierCount="456">
+            <SourceKF id="0" level="0" x="342" y="405" Center_NC="0.00988677 0.116365 0.993157" OneDownFromCenter_NC="0.0098855 0.117475 0.993027" OneRightFromCenter_NC="0.0110052 0.116364 0.993146" Normal_NC="0 0 -1" PixelDown_W="-0.00304844 -0.000116175 -0.00872172" PixelRight_W="0.0086728 -3.19931e-09 -0.00303187" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="8" position="0.598775 -0.67148 -0.0235393" outlierCount="0" inlierCount="455">
+            <SourceKF id="0" level="0" x="422" y="277" Center_NC="0.0995142 -0.0276169 0.994653" OneDownFromCenter_NC="0.0995171 -0.0264915 0.994683" OneRightFromCenter_NC="0.100623 -0.0276139 0.994541" Normal_NC="0 0 -1" PixelDown_W="-0.00232345 -8.85233e-05 -0.00664561" PixelRight_W="0.0066122 5.52785e-09 -0.00231085" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="9" position="-1.30762 -0.18087 -0.0340959" outlierCount="0" inlierCount="457">
+            <SourceKF id="0" level="0" x="178" y="362" Center_NC="-0.171787 0.0673189 0.982831" OneDownFromCenter_NC="-0.171774 0.068427 0.982757" OneRightFromCenter_NC="-0.170711 0.0673314 0.983018" Normal_NC="0 0 -1" PixelDown_W="-0.00251218 -9.56566e-05 -0.0071806" PixelRight_W="0.0071481 2.55101e-08 -0.00249649" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="10" position="0.587029 -0.0566273 -0.0101988" outlierCount="4" inlierCount="424">
+            <SourceKF id="0" level="0" x="412" y="277" Center_NC="0.0884035 -0.0276453 0.995701" OneDownFromCenter_NC="0.0884061 -0.0265188 0.995731" OneRightFromCenter_NC="0.0895161 -0.0276426 0.995602" Normal_NC="0 0 -1" PixelDown_W="-0.00255302 -9.72719e-05 -0.0073024" PixelRight_W="0.0072653 5.39408e-09 -0.00253915" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="11" position="0.590638 -1.29214 -1.12789" outlierCount="0" inlierCount="130">
+            <SourceKF id="0" level="0" x="488" y="440" Center_NC="0.169852 0.152723 0.973564" OneDownFromCenter_NC="0.169824 0.1538 0.973399" OneRightFromCenter_NC="0.170917 0.152695 0.973382" Normal_NC="0 0 -1" PixelDown_W="-0.00209458 -7.99583e-05 -0.00600404" PixelRight_W="0.00597054 -4.90331e-08 -0.00209115" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="12" position="0.77342 0.371511 -1.38614" outlierCount="0" inlierCount="134">
+            <SourceKF id="0" level="0" x="484" y="428" Center_NC="0.165897 0.139854 0.976176" OneDownFromCenter_NC="0.165872 0.140938 0.976024" OneRightFromCenter_NC="0.166967 0.139829 0.975997" Normal_NC="0 0 -1" PixelDown_W="-0.00271656 -0.000103682 -0.00778526" PixelRight_W="0.00774263 -5.65763e-08 -0.00271122" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="13" position="0.584212 -0.842836 0.00751353" outlierCount="0" inlierCount="450">
+            <SourceKF id="0" level="0" x="421" y="273" Center_NC="0.0983917 -0.0321209 0.994629" OneDownFromCenter_NC="0.0983951 -0.0309958 0.994665" OneRightFromCenter_NC="0.0995011 -0.0321175 0.994519" Normal_NC="0 0 -1" PixelDown_W="-0.00225939 -8.60802e-05 -0.00646218" PixelRight_W="0.00642966 6.18208e-09 -0.00224699" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="14" position="0.534979 -0.489664 0.00106856" outlierCount="1" inlierCount="437">
+            <SourceKF id="0" level="0" x="410" y="277" Center_NC="0.0861774 -0.0276506 0.995896" OneDownFromCenter_NC="0.0861799 -0.0265238 0.995926" OneRightFromCenter_NC="0.0872906 -0.027648 0.995799" Normal_NC="0 0 -1" PixelDown_W="-0.00239124 -9.11085e-05 -0.00683971" PixelRight_W="0.00680489 4.92491e-09 -0.00237825" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="15" position="-0.301719 0.587984 -0.837985" outlierCount="0" inlierCount="452">
+            <SourceKF id="0" level="0" x="338" y="405" Center_NC="0.0054129 0.116369 0.993191" OneDownFromCenter_NC="0.0054122 0.117479 0.993061" OneRightFromCenter_NC="0.00653141 0.116368 0.993185" Normal_NC="0 0 -1" PixelDown_W="-0.00279934 -0.000106678 -0.00800873" PixelRight_W="0.00796385 -1.67952e-09 -0.00278393" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="16" position="0.687859 -0.12666 0.0433676" outlierCount="1" inlierCount="466">
+            <SourceKF id="0" level="0" x="423" y="266" Center_NC="0.100582 -0.0399843 0.994125" OneDownFromCenter_NC="0.100586 -0.0388604 0.994169" OneRightFromCenter_NC="0.10169 -0.0399799 0.994012" Normal_NC="0 0 -1" PixelDown_W="-0.00252686 -9.62652e-05 -0.00722674" PixelRight_W="0.00719046 8.80526e-09 -0.0025127" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="17" position="-0.29809 0.644574 -0.828522" outlierCount="0" inlierCount="453">
+            <SourceKF id="0" level="0" x="338" y="403" Center_NC="0.00541427 0.114149 0.993449" OneDownFromCenter_NC="0.00541359 0.115259 0.993321" OneRightFromCenter_NC="0.00653306 0.114148 0.993442" Normal_NC="0 0 -1" PixelDown_W="-0.00282039 -0.00010748 -0.00806894" PixelRight_W="0.00802383 -1.65945e-09 -0.00280489" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="18" position="0.626361 0.0532085 -0.0220333" outlierCount="0" inlierCount="360">
+            <SourceKF id="0" level="0" x="416" y="277" Center_NC="0.0928519 -0.0276343 0.995296" OneDownFromCenter_NC="0.0928546 -0.0265082 0.995327" OneRightFromCenter_NC="0.0939631 -0.0276315 0.995192" Normal_NC="0 0 -1" PixelDown_W="-0.00259409 -9.8836e-05 -0.00741981" PixelRight_W="0.00738227 5.75722e-09 -0.00258001" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="19" position="-1.48418 0.694437 -0.0749184" outlierCount="0" inlierCount="468">
+            <SourceKF id="0" level="0" x="178" y="365" Center_NC="-0.171748 0.0706424 0.982605" OneDownFromCenter_NC="-0.171735 0.0717497 0.982527" OneRightFromCenter_NC="-0.170673 0.0706554 0.982791" Normal_NC="0 0 -1" PixelDown_W="-0.00284015 -0.00010814 -0.00811767" PixelRight_W="0.00808092 3.02697e-08 -0.00282216" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="20" position="0.206977 0.622297 -0.975672" outlierCount="0" inlierCount="117">
+            <SourceKF id="0" level="0" x="400" y="400" Center_NC="0.0746071 0.110515 0.99107" OneDownFromCenter_NC="0.074598 0.111624 0.990947" OneRightFromCenter_NC="0.0757171 0.110506 0.990987" Normal_NC="0 0 -1" PixelDown_W="-0.00281063 -0.000107162 -0.00804555" PixelRight_W="0.00800076 -2.02524e-08 -0.0027984" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="21" position="0.180703 1.20309 -0.712351" outlierCount="0" inlierCount="462">
+            <SourceKF id="0" level="0" x="383" y="366" Center_NC="0.0558901 0.0726956 0.995787" OneDownFromCenter_NC="0.0558856 0.0738171 0.995705" OneRightFromCenter_NC="0.057008 0.0726911 0.995724" Normal_NC="0 0 -1" PixelDown_W="-0.00302645 -0.000115358 -0.00866065" PixelRight_W="0.00861391 -1.06709e-08 -0.00301192" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="22" position="0.720647 -0.173793 -1.30192" outlierCount="2" inlierCount="124">
+            <SourceKF id="0" level="0" x="486" y="431" Center_NC="0.16796 0.143054 0.975359" OneDownFromCenter_NC="0.167934 0.144136 0.975204" OneRightFromCenter_NC="0.169028 0.143028 0.975178" Normal_NC="0 0 -1" PixelDown_W="-0.00251267 -9.59055e-05 -0.00720139" PixelRight_W="0.00716182 -5.42825e-08 -0.00250801" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="23" position="-0.948247 4.1136 0.184367" outlierCount="10" inlierCount="462">
+            <SourceKF id="0" level="0" x="260" y="308" Center_NC="-0.0821084 0.00730917 0.996597" OneDownFromCenter_NC="-0.0821076 0.00843745 0.996588" OneRightFromCenter_NC="-0.0809933 0.00730982 0.996688" Normal_NC="0 0 -1" PixelDown_W="-0.00411197 -0.000156687 -0.011763" PixelRight_W="0.0117027 2.10199e-09 -0.00409052" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="24" position="-2.61396 3.4805 0.718829" outlierCount="4" inlierCount="447">
+            <SourceKF id="0" level="0" x="106" y="313" Center_NC="-0.247967 0.0125965 0.968687" OneDownFromCenter_NC="-0.247963 0.0136938 0.968673" OneRightFromCenter_NC="-0.24694 0.0125999 0.968949" Normal_NC="0 0 -1" PixelDown_W="-0.00387896 -0.000147781 -0.0110941" PixelRight_W="0.0110522 1.09679e-08 -0.00386241" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="25" position="0.408863 -2.64858 -0.652155" outlierCount="0" inlierCount="137">
+            <SourceKF id="0" level="0" x="469" y="407" Center_NC="0.150221 0.117274 0.981672" OneDownFromCenter_NC="0.150202 0.118371 0.981544" OneRightFromCenter_NC="0.151303 0.117255 0.981508" Normal_NC="0 0 -1" PixelDown_W="-0.00158665 -6.05334e-05 -0.00454511" PixelRight_W="0.00452073 -2.48155e-08 -0.00158233" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="26" position="-0.588764 0.734834 -0.775175" outlierCount="0" inlierCount="450">
+            <SourceKF id="0" level="0" x="304" y="407" Center_NC="-0.032593 0.118528 0.992416" OneDownFromCenter_NC="-0.0325887 0.119636 0.992283" OneRightFromCenter_NC="-0.0314764 0.118532 0.992451" Normal_NC="0 0 -1" PixelDown_W="-0.00285531 -0.000108779 -0.00816614" PixelRight_W="0.00812105 9.37098e-09 -0.00283795" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="27" position="-1.86252 2.03168 -0.718251" outlierCount="2" inlierCount="471">
+            <SourceKF id="0" level="0" x="187" y="426" Center_NC="-0.160932 0.137797 0.977299" OneDownFromCenter_NC="-0.160908 0.138883 0.977149" OneRightFromCenter_NC="-0.159859 0.13782 0.977472" Normal_NC="0 0 -1" PixelDown_W="-0.00334755 -0.000127373 -0.0095606" PixelRight_W="0.00951501 6.58361e-08 -0.00332045" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="28" position="-1.17291 1.789 -0.886381" outlierCount="2" inlierCount="464">
+            <SourceKF id="0" level="0" x="255" y="423" Center_NC="-0.0868878 0.135769 0.986923" OneDownFromCenter_NC="-0.0868748 0.136866 0.986773" OneRightFromCenter_NC="-0.0857841 0.135782 0.987018" Normal_NC="0 0 -1" PixelDown_W="-0.00325322 -0.000123872 -0.00929865" PixelRight_W="0.00924889 3.3304e-08 -0.00323017" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="29" position="-1.17996 6.74267 0.178069" outlierCount="5" inlierCount="466">
+            <SourceKF id="0" level="0" x="260" y="310" Center_NC="-0.0821068 0.00956569 0.996578" OneDownFromCenter_NC="-0.0821059 0.0106939 0.996566" OneRightFromCenter_NC="-0.0809918 0.00956654 0.996669" Normal_NC="0 0 -1" PixelDown_W="-0.00509452 -0.000194125 -0.0145735" PixelRight_W="0.0144989 3.40828e-09 -0.00506783" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="30" position="-0.507864 -1.37516 -0.508962" outlierCount="0" inlierCount="467">
+            <SourceKF id="0" level="0" x="291" y="407" Center_NC="-0.0470964 0.118461 0.991841" OneDownFromCenter_NC="-0.0470902 0.119568 0.991709" OneRightFromCenter_NC="-0.0459817 0.118467 0.991893" Normal_NC="0 0 -1" PixelDown_W="-0.00206557 -7.8683e-05 -0.00590674" PixelRight_W="0.00587444 9.85302e-09 -0.0020526" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="31" position="-0.301352 -1.46613 -0.321034" outlierCount="24" inlierCount="444">
+            <SourceKF id="0" level="0" x="312" y="369" Center_NC="-0.0237538 0.0761546 0.996813" OneDownFromCenter_NC="-0.0237518 0.0772766 0.996727" OneRightFromCenter_NC="-0.0226318 0.0761565 0.996839" Normal_NC="0 0 -1" PixelDown_W="-0.00202929 -7.73201e-05 -0.00580461" PixelRight_W="0.0057734 3.07195e-09 -0.00201785" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="32" position="0.602465 3.05084 -0.191837" outlierCount="3" inlierCount="468">
+            <SourceKF id="0" level="0" x="394" y="296" Center_NC="0.0683498 -0.0062374 0.997642" OneDownFromCenter_NC="0.0683502 -0.00510793 0.997648" OneRightFromCenter_NC="0.069468 -0.00623693 0.997565" Normal_NC="0 0 -1" PixelDown_W="-0.00371408 -0.000141527 -0.0106249" PixelRight_W="0.01057 1.36633e-09 -0.00369466" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="33" position="0.617297 -0.0338348 0.0468729" outlierCount="5" inlierCount="467">
+            <SourceKF id="0" level="0" x="413" y="269" Center_NC="0.0894907 -0.0366502 0.995313" OneDownFromCenter_NC="0.0894943 -0.0355247 0.995354" OneRightFromCenter_NC="0.0906027 -0.0366466 0.995213" Normal_NC="0 0 -1" PixelDown_W="-0.00256143 -9.7587e-05 -0.00732601" PixelRight_W="0.00728883 7.26745e-09 -0.00254722" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="34" position="0.443887 0.177033 -0.0487167" outlierCount="0" inlierCount="473">
+            <SourceKF id="0" level="0" x="394" y="288" Center_NC="0.0683433 -0.015272 0.997545" OneDownFromCenter_NC="0.0683444 -0.0141428 0.997562" OneRightFromCenter_NC="0.0694614 -0.0152708 0.997468" Normal_NC="0 0 -1" PixelDown_W="-0.00264033 -0.000100608 -0.0075529" PixelRight_W="0.00751391 2.37837e-09 -0.00262631" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="35" position="0.621896 3.02204 -0.163907" outlierCount="11" inlierCount="458">
+            <SourceKF id="0" level="0" x="395" y="293" Center_NC="0.0694662 -0.00962493 0.997538" OneDownFromCenter_NC="0.0694669 -0.00849563 0.997548" OneRightFromCenter_NC="0.0705841 -0.00962419 0.997459" Normal_NC="0 0 -1" PixelDown_W="-0.00370324 -0.000141112 -0.0105937" PixelRight_W="0.010539 2.13669e-09 -0.00368377" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="36" position="0.380639 5.75912 -1.08873" outlierCount="2" inlierCount="463">
+            <SourceKF id="0" level="0" x="387" y="359" Center_NC="0.0603924 0.0648213 0.996068" OneDownFromCenter_NC="0.060388 0.0659443 0.995994" OneRightFromCenter_NC="0.06151 0.064817 0.996" Normal_NC="0 0 -1" PixelDown_W="-0.00472935 -0.000180266 -0.0135336" PixelRight_W="0.0134611 -1.6046e-08 -0.00470671" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="37" position="-1.5064 0.90551 -0.000548692" outlierCount="2" inlierCount="463">
+            <SourceKF id="0" level="0" x="177" y="356" Center_NC="-0.172934 0.0606542 0.983064" OneDownFromCenter_NC="-0.172922 0.0617635 0.982997" OneRightFromCenter_NC="-0.171858 0.0606655 0.983252" Normal_NC="0 0 -1" PixelDown_W="-0.00291835 -0.00011113 -0.00834222" PixelRight_W="0.00830456 2.68693e-08 -0.00290062" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="38" position="0.976765 5.27963 -1.96059" outlierCount="4" inlierCount="139">
+            <SourceKF id="0" level="0" x="451" y="407" Center_NC="0.130673 0.117595 0.984427" OneDownFromCenter_NC="0.130656 0.118695 0.984297" OneRightFromCenter_NC="0.131763 0.117579 0.984283" Normal_NC="0 0 -1" PixelDown_W="-0.00455197 -0.000173638 -0.0130372" PixelRight_W="0.0129661 -6.17791e-08 -0.00453755" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="39" position="0.398681 -2.50481 -0.446722" outlierCount="4" inlierCount="134">
+            <SourceKF id="0" level="0" x="449" y="365" Center_NC="0.129049 0.0710975 0.989086" OneDownFromCenter_NC="0.129039 0.0722119 0.989007" OneRightFromCenter_NC="0.130144 0.0710875 0.988943" Normal_NC="0 0 -1" PixelDown_W="-0.00163975 -6.25234e-05 -0.00469419" PixelRight_W="0.00466996 -1.3162e-08 -0.00163351" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="40" position="-1.12573 -1.00641 -0.0119334" outlierCount="4" inlierCount="432">
+            <SourceKF id="0" level="0" x="181" y="360" Center_NC="-0.168583 0.0651381 0.983533" OneDownFromCenter_NC="-0.16857 0.0662472 0.983461" OneRightFromCenter_NC="-0.167505 0.0651499 0.983716" Normal_NC="0 0 -1" PixelDown_W="-0.00220292 -8.38841e-05 -0.00629691" PixelRight_W="0.00626823 2.12108e-08 -0.00218929" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="41" position="0.599216 -0.996324 -1.22003" outlierCount="1" inlierCount="125">
+            <SourceKF id="0" level="0" x="486" y="445" Center_NC="0.167578 0.158162 0.973089" OneDownFromCenter_NC="0.167549 0.159237 0.972919" OneRightFromCenter_NC="0.168644 0.158133 0.97291" Normal_NC="0 0 -1" PixelDown_W="-0.00220542 -8.41931e-05 -0.00632206" PixelRight_W="0.00628636 -5.28041e-08 -0.00220186" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="42" position="0.405451 -1.8547 0.00559569" outlierCount="0" inlierCount="389">
+            <SourceKF id="0" level="0" x="409" y="280" Center_NC="0.0850711 -0.0242723 0.996079" OneDownFromCenter_NC="0.0850734 -0.0231451 0.996106" OneRightFromCenter_NC="0.0861848 -0.02427 0.995984" Normal_NC="0 0 -1" PixelDown_W="-0.00188138 -7.16838e-05 -0.00538147" PixelRight_W="0.00535405 3.35687e-09 -0.00187124" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="43" position="-4.85354 11.7124 1.20938" outlierCount="1" inlierCount="450">
+            <SourceKF id="0" level="0" x="98" y="316" Center_NC="-0.256136 0.0158541 0.966511" OneDownFromCenter_NC="-0.256132 0.0169489 0.966493" OneRightFromCenter_NC="-0.255117 0.0158584 0.96678" Normal_NC="0 0 -1" PixelDown_W="-0.00695876 -0.000265098 -0.0199011" PixelRight_W="0.0198283 2.56952e-08 -0.00692887" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="44" position="-1.52573 1.23393 0.00810474" outlierCount="4" inlierCount="456">
+            <SourceKF id="0" level="0" x="181" y="353" Center_NC="-0.168661 0.0573676 0.984003" OneDownFromCenter_NC="-0.168651 0.0584783 0.98394" OneRightFromCenter_NC="-0.167583 0.057378 0.984187" Normal_NC="0 0 -1" PixelDown_W="-0.00304089 -0.000115803 -0.00869305" PixelRight_W="0.00865347 2.57768e-08 -0.00302267" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="45" position="-0.474988 4.44799 -1.24254" outlierCount="0" inlierCount="449">
+            <SourceKF id="0" level="0" x="334" y="400" Center_NC="0.000939288 0.110817 0.99384" OneDownFromCenter_NC="0.000939173 0.111928 0.993716" OneRightFromCenter_NC="0.00205855 0.110817 0.993839" Normal_NC="0 0 -1" PixelDown_W="-0.00424373 -0.000161715 -0.0121405" PixelRight_W="0.012073 -6.07751e-10 -0.00422019" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="46" position="-1.54573 4.60044 0.908898" outlierCount="3" inlierCount="470">
+            <SourceKF id="0" level="0" x="201" y="270" Center_NC="-0.147144 -0.0352852 0.988485" OneDownFromCenter_NC="-0.14715 -0.0341671 0.988524" OneRightFromCenter_NC="-0.146054 -0.0352908 0.988647" Normal_NC="0 0 -1" PixelDown_W="-0.00429083 -0.000163564 -0.0122798" PixelRight_W="0.0122196 -1.93525e-08 -0.00427304" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="47" position="-1.58366 1.8987 -0.0223469" outlierCount="0" inlierCount="452">
+            <SourceKF id="0" level="0" x="188" y="353" Center_NC="-0.161104 0.0574394 0.985265" OneDownFromCenter_NC="-0.161093 0.0585515 0.985201" OneRightFromCenter_NC="-0.160022 0.0574494 0.98544" Normal_NC="0 0 -1" PixelDown_W="-0.00328949 -0.000125274 -0.00940404" PixelRight_W="0.0093606 2.65968e-08 -0.00326979" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="48" position="-0.0134842 0.862769 -1.05191" outlierCount="90" inlierCount="379">
+            <SourceKF id="0" level="0" x="377" y="413" Center_NC="0.0489277 0.125088 0.990939" OneDownFromCenter_NC="0.048921 0.126193 0.990799" OneRightFromCenter_NC="0.0500411 0.125081 0.990884" Normal_NC="0 0 -1" PixelDown_W="-0.00290177 -0.000110621 -0.00830513" PixelRight_W="0.00825792 -1.55816e-08 -0.00288789" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="49" position="0.118345 -1.55234 -0.677678" outlierCount="124" inlierCount="141">
+            <SourceKF id="0" level="0" x="397" y="403" Center_NC="0.0712491 0.113867 0.990938" OneDownFromCenter_NC="0.0712402 0.114975 0.990811" OneRightFromCenter_NC="0.0723595 0.113858 0.990858" Normal_NC="0 0 -1" PixelDown_W="-0.00199731 -7.61512e-05 -0.00571731" PixelRight_W="0.00568533 -1.41693e-08 -0.00198852" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="50" position="-5.84046 15.3287 1.44329" outlierCount="2" inlierCount="449">
+            <SourceKF id="0" level="0" x="96" y="316" Center_NC="-0.258173 0.0158454 0.965969" OneDownFromCenter_NC="-0.258169 0.0169396 0.965951" OneRightFromCenter_NC="-0.257155 0.0158498 0.96624" Normal_NC="0 0 -1" PixelDown_W="-0.0083116 -0.000316635 -0.02377" PixelRight_W="0.0236837 3.09527e-08 -0.00827609" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="51" position="0.385886 0.323929 -0.0975231" outlierCount="1" inlierCount="472">
+            <SourceKF id="0" level="0" x="388" y="296" Center_NC="0.0616355 -0.00624007 0.998079" OneDownFromCenter_NC="0.0616359 -0.00511011 0.998086" OneRightFromCenter_NC="0.0627552 -0.00623964 0.998009" Normal_NC="0 0 -1" PixelDown_W="-0.00269535 -0.000102709 -0.00771067" PixelRight_W="0.00767066 8.94562e-10 -0.00268122" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="52" position="0.242448 -0.48849 -0.927234" outlierCount="8" inlierCount="137">
+            <SourceKF id="0" level="0" x="414" y="411" Center_NC="0.0899944 0.122533 0.988376" OneDownFromCenter_NC="0.0899823 0.123636 0.98824" OneRightFromCenter_NC="0.0910987 0.122521 0.988276" Normal_NC="0 0 -1" PixelDown_W="-0.00239536 -9.13456e-05 -0.00685824" PixelRight_W="0.00681971 -2.31821e-08 -0.0023858" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="53" position="-0.964921 0.109227 0.569335" outlierCount="2" inlierCount="471">
+            <SourceKF id="0" level="0" x="200" y="273" Center_NC="-0.14825 -0.0319254 0.988434" OneDownFromCenter_NC="-0.148255 -0.0308072 0.988469" OneRightFromCenter_NC="-0.147161 -0.0319306 0.988597" Normal_NC="0 0 -1" PixelDown_W="-0.00261407 -9.96438e-05 -0.00748089" PixelRight_W="0.00744437 -1.07487e-08 -0.00260311" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="54" position="-1.60313 1.68641 0.02178" outlierCount="12" inlierCount="461">
+            <SourceKF id="0" level="0" x="181" y="351" Center_NC="-0.168682 0.0551455 0.984127" OneDownFromCenter_NC="-0.168672 0.0562566 0.984066" OneRightFromCenter_NC="-0.167604 0.0551556 0.98431" Normal_NC="0 0 -1" PixelDown_W="-0.00321004 -0.000122247 -0.00917684" PixelRight_W="0.00913505 2.61541e-08 -0.00319098" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="55" position="-0.128712 -0.461686 -0.809345" outlierCount="10" inlierCount="463">
+            <SourceKF id="0" level="0" x="360" y="412" Center_NC="0.0299805 0.124073 0.99182" OneDownFromCenter_NC="0.0299764 0.125179 0.991681" OneRightFromCenter_NC="0.0310965 0.124069 0.991786" Normal_NC="0 0 -1" PixelDown_W="-0.00240641 -9.17226e-05 -0.00688614" PixelRight_W="0.00684707 -7.8945e-09 -0.00239408" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="56" position="-0.0255393 -0.599014 0.0146601" outlierCount="6" inlierCount="467">
+            <SourceKF id="0" level="0" x="336" y="301" Center_NC="0.00320601 -0.00059289 0.999995" OneDownFromCenter_NC="0.00320601 0.000542392 0.999995" OneRightFromCenter_NC="0.00433519 -0.000592887 0.99999" Normal_NC="0 0 -1" PixelDown_W="-0.00235718 -8.9824e-05 -0.0067434" PixelRight_W="0.00670779 3.65313e-22 -0.00234473" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="57" position="0.0229654 -0.320484 -0.882607" outlierCount="11" inlierCount="461">
+            <SourceKF id="0" level="0" x="382" y="412" Center_NC="0.0545002 0.123948 0.990791" OneDownFromCenter_NC="0.0544927 0.125053 0.990653" OneRightFromCenter_NC="0.0556127 0.12394 0.99073" Normal_NC="0 0 -1" PixelDown_W="-0.00245882 -9.37391e-05 -0.0070377" PixelRight_W="0.00699777 -1.4561e-08 -0.00244732" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="58" position="0.377925 -1.0503 -1.26576" outlierCount="5" inlierCount="466">
+            <SourceKF id="0" level="0" x="458" y="464" Center_NC="0.137031 0.179306 0.974203" OneDownFromCenter_NC="0.137004 0.180375 0.97401" OneRightFromCenter_NC="0.138108 0.17928 0.974056" Normal_NC="0 0 -1" PixelDown_W="-0.00218643 -8.34565e-05 -0.00626665" PixelRight_W="0.00622902 -4.84401e-08 -0.00218145" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="59" position="0.747056 0.119357 -1.25887" outlierCount="10" inlierCount="126">
+            <SourceKF id="0" level="0" x="481" y="419" Center_NC="0.162898 0.130142 0.978022" OneDownFromCenter_NC="0.162875 0.131231 0.97788" OneRightFromCenter_NC="0.163971 0.130119 0.977846" Normal_NC="0 0 -1" PixelDown_W="-0.002622 -0.000100059 -0.00751306" PixelRight_W="0.00747246 -4.97087e-08 -0.00261621" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="60" position="-2.96427 3.62415 0.657731" outlierCount="15" inlierCount="430">
+            <SourceKF id="0" level="0" x="83" y="327" Center_NC="-0.271262 0.0277757 0.962105" OneDownFromCenter_NC="-0.271254 0.0288651 0.962075" OneRightFromCenter_NC="-0.270255 0.0277837 0.962388" Normal_NC="0 0 -1" PixelDown_W="-0.0039354 -0.000149885 -0.0112517" PixelRight_W="0.0112133 2.72041e-08 -0.00391736" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="61" position="-1.53533 0.721782 -0.0505991" outlierCount="10" inlierCount="463">
+            <SourceKF id="0" level="0" x="172" y="364" Center_NC="-0.1782 0.0694559 0.98154" OneDownFromCenter_NC="-0.178187 0.0705622 0.981463" OneRightFromCenter_NC="-0.177129 0.0694692 0.981733" Normal_NC="0 0 -1" PixelDown_W="-0.00285046 -0.000108531 -0.00814698" PixelRight_W="0.0081106 3.10617e-08 -0.00283247" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="62" position="0.210186 -0.218737 -1.00299" outlierCount="25" inlierCount="119">
+            <SourceKF id="0" level="0" x="410" y="417" Center_NC="0.0855034 0.129191 0.987926" OneDownFromCenter_NC="0.0854913 0.130292 0.987783" OneRightFromCenter_NC="0.0866081 0.129179 0.987832" Normal_NC="0 0 -1" PixelDown_W="-0.00249661 -9.52068e-05 -0.00714815" PixelRight_W="0.00710757 -2.42323e-08 -0.00248651" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="63" position="-0.749046 0.248667 -0.720598" outlierCount="0" inlierCount="473">
+            <SourceKF id="0" level="0" x="281" y="415" Center_NC="-0.0581709 0.127235 0.990165" OneDownFromCenter_NC="-0.0581627 0.128338 0.990023" OneRightFromCenter_NC="-0.0570592 0.127243 0.990229" Normal_NC="0 0 -1" PixelDown_W="-0.00267449 -0.000101866 -0.007647" PixelRight_W="0.00760522 1.70178e-08 -0.00265699" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="64" position="5.27116 14.7651 -4.8438" outlierCount="6" inlierCount="77">
+            <SourceKF id="0" level="0" x="604" y="409" Center_NC="0.290074 0.115731 0.949981" OneDownFromCenter_NC="0.290039 0.116794 0.949861" OneRightFromCenter_NC="0.291057 0.115696 0.949684" Normal_NC="0 0 -1" PixelDown_W="-0.00809566 -0.000309241 -0.0232226" PixelRight_W="0.0231272 -2.57366e-07 -0.00810587" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="65" position="-2.45628 2.21183 0.653198" outlierCount="0" inlierCount="449">
+            <SourceKF id="0" level="0" x="91" y="317" Center_NC="-0.263247 0.0169161 0.96458" OneDownFromCenter_NC="-0.263242 0.0180087 0.964562" OneRightFromCenter_NC="-0.262233 0.0169209 0.964856" Normal_NC="0 0 -1" PixelDown_W="-0.00340536 -0.000129726 -0.00973859" PixelRight_W="0.00970392 1.38444e-08 -0.00339087" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="66" position="-2.14458 3.14105 -0.594355" outlierCount="5" inlierCount="467">
+            <SourceKF id="0" level="0" x="176" y="409" Center_NC="-0.173111 0.119024 0.977684" OneDownFromCenter_NC="-0.173088 0.120115 0.977554" OneRightFromCenter_NC="-0.172041 0.119046 0.97787" Normal_NC="0 0 -1" PixelDown_W="-0.00376197 -0.000143157 -0.0107454" PixelRight_W="0.0106962 6.87204e-08 -0.00373308" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="67" position="-1.16066 -1.36934 -0.335681" outlierCount="6" inlierCount="467">
+            <SourceKF id="0" level="0" x="183" y="415" Center_NC="-0.16548 0.125729 0.978166" OneDownFromCenter_NC="-0.165457 0.126819 0.978029" OneRightFromCenter_NC="-0.164407 0.125751 0.978344" Normal_NC="0 0 -1" PixelDown_W="-0.0020709 -7.88045e-05 -0.00591511" PixelRight_W="0.00588741 3.81541e-08 -0.00205475" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="68" position="0.277186 -2.80658 -0.859475" outlierCount="15" inlierCount="458">
+            <SourceKF id="0" level="0" x="462" y="463" Center_NC="0.141364 0.178131 0.9738" OneDownFromCenter_NC="0.141337 0.179199 0.973607" OneRightFromCenter_NC="0.14244 0.178104 0.973648" Normal_NC="0 0 -1" PixelDown_W="-0.00152892 -5.83619e-05 -0.00438235" PixelRight_W="0.00435616 -3.47413e-08 -0.00152564" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+        <MapPoint id="69" position="-2.27097 1.58695 0.608327" outlierCount="0" inlierCount="450">
+            <SourceKF id="0" level="0" x="93" y="317" Center_NC="-0.261218 0.0169256 0.965131" OneDownFromCenter_NC="-0.261213 0.0180188 0.965113" OneRightFromCenter_NC="-0.260203 0.0169303 0.965406" Normal_NC="0 0 -1" PixelDown_W="-0.00317155 -0.000120819 -0.00906996" PixelRight_W="0.00903743 1.27869e-08 -0.00315798" />
+            <MapMakerData>
+                <MeasurementKFs size="2">0 1 </MeasurementKFs>
+                <sNeverRetryKFs size="0"></sNeverRetryKFs>
+            </MapMakerData>
+        </MapPoint>
+    </MapPoints>
+    <NewMapPoints size="0" />
+    <FailureQueue size="0" />
+    <Game type="None" />
+</PTAMM_Map>

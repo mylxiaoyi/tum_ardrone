@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>tum_ardrone</name>
-  <version>0.0.0</version>
-  <description>The tum_ardrone package</description>
+  <name>my_ardrone</name>
+  <version>0.0.1</version>
+  <description>The my_ardrone package based PTAMM</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
