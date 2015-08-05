@@ -32,7 +32,7 @@
 #include "../HelperFunctions.h"
 #include "tum_ardrone/filter_state.h"
 
-class EstimationNode;
+struct EstimationNode;
 
 
 class ScaleStruct

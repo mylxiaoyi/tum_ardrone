@@ -57,7 +57,8 @@ class GLWindowMenu
   int mnWidth;
   int mnMenuTop;
   int mnMenuHeight;
-  int mnTextOffset;
+  // compiler warning not used
+  //int mnTextOffset;
   
   GVars3::gvar2_int mgvnEnabled;
   GVars3::gvar2_int mgvnMenuItemWidth;

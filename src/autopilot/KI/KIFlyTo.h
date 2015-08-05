@@ -48,7 +48,7 @@ public:
 		double stayWithinDistP = 0.5);
 
 	~KIFlyTo(void);
-	bool update(const tum_ardrone::filter_stateConstPtr statePtr);
+    bool update(const myros_ardrone::filter_stateConstPtr statePtr);
 };
 
 #endif /* __KIFLYTO_H */

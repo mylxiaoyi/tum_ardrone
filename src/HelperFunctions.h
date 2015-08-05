@@ -68,7 +68,6 @@ inline static TooN::SO3<> rpy2rod(double roll, double pitch, double yaw)
 	mat(2,2) = cb*cg;
 
 	//mat = mat.T();
-
 	TooN::SO3<> res = mat;
 	return res.inverse();
 }

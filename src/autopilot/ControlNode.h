@@ -23,19 +23,19 @@
 
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
-#include "tum_ardrone/filter_state.h"
+#include "myros_ardrone/filter_state.h"
 #include "std_msgs/String.h"
 #include <dynamic_reconfigure/server.h>
-#include "tum_ardrone/AutopilotParamsConfig.h"
+#include "myros_ardrone/AutopilotParamsConfig.h"
 #include "DroneController.h"
 #include "std_msgs/Empty.h"
 #include "std_srvs/Empty.h"
 
-#include "tum_ardrone/SetReference.h"
-#include "tum_ardrone/SetMaxControl.h"
-#include "tum_ardrone/SetInitialReachDistance.h"
-#include "tum_ardrone/SetStayWithinDistance.h"
-#include "tum_ardrone/SetStayTime.h"
+#include "myros_ardrone/SetReference.h"
+#include "myros_ardrone/SetMaxControl.h"
+#include "myros_ardrone/SetInitialReachDistance.h"
+#include "myros_ardrone/SetStayWithinDistance.h"
+#include "myros_ardrone/SetStayTime.h"
 #include "std_srvs/Empty.h"
 
 class DroneKalmanFilter;
@@ -44,19 +44,19 @@ class PTAMWrapper;
 class KIProcedure;
 
 
-struct ControlNode
+class ControlNode
 {
 private:
 	ros::Subscriber dronepose_sub;
 	ros::Publisher vel_pub;
-	ros::Subscriber tum_ardrone_sub;
-	ros::Publisher tum_ardrone_pub;
+    ros::Subscriber myros_ardrone_sub;
+    ros::Publisher myros_ardrone_pub;
 	ros::Publisher takeoff_pub;
 	ros::Publisher land_pub;
 	ros::Publisher toggleState_pub;
 
 	ros::NodeHandle nh_;
-	static pthread_mutex_t tum_ardrone_CS;
+    static pthread_mutex_t myros_ardrone_CS;
 
 	// parameters
 	int minPublishFreq;
@@ -80,11 +80,11 @@ private:
 	ros::ServiceServer hover_;
 	ros::ServiceServer lockScaleFP_;
 
-	bool setReference(tum_ardrone::SetReference::Request&, tum_ardrone::SetReference::Response&);
-	bool setMaxControl(tum_ardrone::SetMaxControl::Request&, tum_ardrone::SetMaxControl::Response&);
-	bool setInitialReachDistance(tum_ardrone::SetInitialReachDistance::Request&, tum_ardrone::SetInitialReachDistance::Response&);
-	bool setStayWithinDistance(tum_ardrone::SetStayWithinDistance::Request&, tum_ardrone::SetStayWithinDistance::Response&);
-	bool setStayTime(tum_ardrone::SetStayTime::Request&, tum_ardrone::SetStayTime::Response&);
+    bool setReference(myros_ardrone::SetReference::Request&, myros_ardrone::SetReference::Response&);
+    bool setMaxControl(myros_ardrone::SetMaxControl::Request&, myros_ardrone::SetMaxControl::Response&);
+    bool setInitialReachDistance(myros_ardrone::SetInitialReachDistance::Request&, myros_ardrone::SetInitialReachDistance::Response&);
+    bool setStayWithinDistance(myros_ardrone::SetStayWithinDistance::Request&, myros_ardrone::SetStayWithinDistance::Response&);
+    bool setStayTime(myros_ardrone::SetStayTime::Request&, myros_ardrone::SetStayTime::Response&);
 	bool start(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
 	bool stop(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
 	bool clear(std_srvs::Empty::Request&, std_srvs::Empty::Response&);
@@ -110,9 +110,9 @@ private:
 	void startControl();
 	void stopControl();
 	void clearCommands();
-	void updateControl(const tum_ardrone::filter_stateConstPtr statePtr);
+    void updateControl(const myros_ardrone::filter_stateConstPtr statePtr);
 
-	void popNextCommand(const tum_ardrone::filter_stateConstPtr statePtr);
+    void popNextCommand(const myros_ardrone::filter_stateConstPtr statePtr);
 	void reSendInfo();
 	char buf[500];
 	ControlCommand lastSentControl;
@@ -122,14 +122,14 @@ public:
 
 
 	// ROS message callbacks
-	void droneposeCb(const tum_ardrone::filter_stateConstPtr statePtr);
+    void droneposeCb(const myros_ardrone::filter_stateConstPtr statePtr);
 	void comCb(const std_msgs::StringConstPtr str);
-	void dynConfCb(tum_ardrone::AutopilotParamsConfig &config, uint32_t level);
+    void dynConfCb(myros_ardrone::AutopilotParamsConfig &config, uint32_t level);
 
 	// main pose-estimation loop
 	void Loop();
 
-	// writes a string message to "/tum_ardrone/com".
+    // writes a string message to "/myros_ardrone/com".
 	// is thread-safe (can be called by any thread, but may block till other calling thread finishes)
 	void publishCommand(std::string c);
 

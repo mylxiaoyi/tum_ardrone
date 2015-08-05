@@ -33,8 +33,8 @@
 #include "DroneKalmanFilter.h"
 #include <ardrone_autonomy/Navdata.h>
 #include "deque"
-#include "tum_ardrone/filter_state.h"
-#include "PTAMMWrapper.h"
+#include "myros_ardrone/filter_state.h"
+#include "PTAMWrapper.h"
 #include "std_msgs/String.h"
 #include "std_msgs/Empty.h"
 #include "std_srvs/Empty.h"
@@ -55,8 +55,8 @@ EstimationNode::EstimationNode()
     control_channel = nh_.resolveName("cmd_vel");
     output_channel = nh_.resolveName("ardrone/predictedPose");
     video_channel = nh_.resolveName("ardrone/image_raw");
-    command_channel = nh_.resolveName("tum_ardrone/com");
-    packagePath = ros::package::getPath("my_ardrone");
+    command_channel = nh_.resolveName("myros_ardrone/com");
+    packagePath = ros::package::getPath("myros_ardrone");
 
 	std::string val;
 	float valFloat = 0;
@@ -86,8 +86,8 @@ EstimationNode::EstimationNode()
 
 	dronepose_pub	   = nh_.advertise<tum_ardrone::filter_state>(output_channel,1);
 
-	tum_ardrone_pub	   = nh_.advertise<std_msgs::String>(command_channel,50);
-	tum_ardrone_sub	   = nh_.subscribe(command_channel,50, &EstimationNode::comCb, this);
+    myros_ardrone_pub	   = nh_.advertise<std_msgs::String>(command_channel,50);
+    myros_ardrone_sub	   = nh_.subscribe(command_channel,50, &EstimationNode::comCb, this);
 
 	//tf_broadcaster();
 
@@ -99,8 +99,8 @@ EstimationNode::EstimationNode()
 	droneRosTSOffset = 0;
 	lastNavStamp = ros::Time(0);
 	filter = new DroneKalmanFilter(this);
-    ptammWrapper = new PTAMMWrapper(filter, this);
-    mapView = new MapView(filter, ptammWrapper, this);
+	ptamWrapper = new PTAMWrapper(filter, this);
+	mapView = new MapView(filter, ptamWrapper, this);
 	arDroneVersion = 0;
 	//memset(&lastNavdataReceived,0,sizeof(ardrone_autonomy::Navdata));
 
@@ -111,7 +111,7 @@ EstimationNode::~EstimationNode()
 {
 	filter->release();
 	delete mapView;
-    delete ptammWrapper;
+	delete ptamWrapper;
 	delete filter;
 
 
@@ -171,7 +171,7 @@ void EstimationNode::navdataCb(const ardrone_autonomy::NavdataConstPtr navdataPt
 
 
 	// give to PTAM (for scale estimation)
-    ptammWrapper->newNavdata(&lastNavdataReceived);
+	ptamWrapper->newNavdata(&lastNavdataReceived);
 
 
 	// save last timestamp
@@ -214,14 +214,14 @@ void EstimationNode::velCb(const geometry_msgs::TwistConstPtr velPtr)
 void EstimationNode::vidCb(const sensor_msgs::ImageConstPtr img)
 {
 	// give to PTAM
-    ptammWrapper->newImage(img);
+	ptamWrapper->newImage(img);
 }
 
 void EstimationNode::comCb(const std_msgs::StringConstPtr str)
 {
 	if(str->data.length() > 2 && str->data.substr(0,2) == "p ")
 	{
-        ptammWrapper->handleCommand(str->data.substr(2,str->data.length()-2));
+		ptamWrapper->handleCommand(str->data.substr(2,str->data.length()-2));
 	}
 
 	if(str->data.length() > 2 && str->data.substr(0,2) == "f ")
@@ -274,7 +274,7 @@ void EstimationNode::Loop()
 		  s.header.stamp = ros::Time().now();
 		  s.scale = filter->getCurrentScales()[0];
 		  s.scaleAccuracy = filter->getScaleAccuracy();
-          s.ptamState = ptammWrapper->PTAMStatus;
+		  s.ptamState = ptamWrapper->PTAMStatus;
 		  s.droneState = lastNavdataReceived.state;
 		  s.batteryPercent = lastNavdataReceived.batteryPercent;
 
@@ -305,7 +305,7 @@ void EstimationNode::dynConfCb(tum_ardrone::StateestimationParamsConfig &config,
 	if(!filter->allSyncLocked && config.PTAMSyncLock)
 		ROS_WARN("Ptam Sync has been disabled. This fixes scale etc.");
 
-    if(!ptammWrapper->mapLocked && config.PTAMMapLock)
+	if(!ptamWrapper->mapLocked && config.PTAMMapLock)
 		ROS_WARN("Ptam Map has been locked.");
 
 
@@ -315,12 +315,12 @@ void EstimationNode::dynConfCb(tum_ardrone::StateestimationParamsConfig &config,
 
 	filter->useScalingFixpoint = config.RescaleFixOrigin;
 
-    ptammWrapper->maxKF = config.PTAMMaxKF;
-    ptammWrapper->mapLocked = config.PTAMMapLock;
+	ptamWrapper->maxKF = config.PTAMMaxKF;
+	ptamWrapper->mapLocked = config.PTAMMapLock;
 	filter->allSyncLocked = config.PTAMSyncLock;
 
 
-    ptammWrapper->setPTAMPars(config.PTAMMinKFTimeDiff, config.PTAMMinKFWiggleDist, config.PTAMMinKFDist);
+	ptamWrapper->setPTAMPars(config.PTAMMinKFTimeDiff, config.PTAMMinKFWiggleDist, config.PTAMMinKFDist);
 
 
 	filter->c1 = config.c1;
@@ -334,14 +334,14 @@ void EstimationNode::dynConfCb(tum_ardrone::StateestimationParamsConfig &config,
 
 }
 
-pthread_mutex_t EstimationNode::tum_ardrone_CS = PTHREAD_MUTEX_INITIALIZER; //pthread_mutex_lock( &cs_mutex );
+pthread_mutex_t EstimationNode::myros_ardrone_CS = PTHREAD_MUTEX_INITIALIZER; //pthread_mutex_lock( &cs_mutex );
 void EstimationNode::publishCommand(std::string c)
 {
 	std_msgs::String s;
 	s.data = c.c_str();
-	pthread_mutex_lock(&tum_ardrone_CS);
-	tum_ardrone_pub.publish(s);
-	pthread_mutex_unlock(&tum_ardrone_CS);
+    pthread_mutex_lock(&myros_ardrone_CS);
+    myros_ardrone_pub.publish(s);
+    pthread_mutex_unlock(&myros_ardrone_CS);
 }
 
 void EstimationNode::publishTf(TooN::SE3<> trans, ros::Time stamp, int seq, std::string system)
@@ -503,25 +503,25 @@ void EstimationNode::reSendInfo()
 
 	// get ptam status string
 	std::string ptamStatus;
-    switch(ptammWrapper->PTAMStatus)
+	switch(ptamWrapper->PTAMStatus)
 	{
-    case PTAMMWrapper::PTAM_IDLE:
+	case PTAMWrapper::PTAM_IDLE:
 		ptamStatus = "Idle";
 		break;
-    case PTAMMWrapper::PTAM_INITIALIZING:
+	case PTAMWrapper::PTAM_INITIALIZING:
 		ptamStatus = "Initializing";
 		break;
-    case PTAMMWrapper::PTAM_LOST:
+	case PTAMWrapper::PTAM_LOST:
 		ptamStatus = "Lost";
 		break;
-    case PTAMMWrapper::PTAM_FALSEPOSITIVE:
+	case PTAMWrapper::PTAM_FALSEPOSITIVE:
 		ptamStatus = "FalsePositive";
 		break;
-    case PTAMMWrapper::PTAM_GOOD:
+	case PTAMWrapper::PTAM_GOOD:
 		ptamStatus = "Good";
 		break;
-    case PTAMMWrapper::PTAM_TOOKKF:
-    case PTAMMWrapper::PTAM_BEST:
+	case PTAMWrapper::PTAM_TOOKKF:
+	case PTAMWrapper::PTAM_BEST:
 		ptamStatus = "Best";
 		break;
 	}
@@ -529,7 +529,7 @@ void EstimationNode::reSendInfo()
 
 
 	// parse PTAM message
-    std::string ptamMsg = ptammWrapper->lastPTAMMessage;
+	std::string ptamMsg = ptamWrapper->lastPTAMMessage;
 	int kf, kp, kps[4], kpf[4];
 	int pos = ptamMsg.find("Found: ");
 	int found = 0;
@@ -543,7 +543,7 @@ void EstimationNode::reSendInfo()
 	else
 		snprintf(bufp,200,"Map: -");
 
-	lastNavdataReceived.batteryPercent;
+    //lastNavdataReceived.batteryPercent;
 
 	std::string status = "";
 	switch(	lastNavdataReceived.state)

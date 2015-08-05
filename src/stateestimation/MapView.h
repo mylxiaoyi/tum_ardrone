@@ -32,9 +32,9 @@
 
 
 class DroneKalmanFilter;
-class PTAMMWrapper;
+class PTAMWrapper;
 class Predictor;
-class EstimationNode;
+struct EstimationNode;
 
 class TrailPoint
 {
@@ -77,7 +77,7 @@ private:
 	void Render();
 
 	DroneKalmanFilter* filter;
-    PTAMMWrapper* ptammWrapper;
+	PTAMWrapper* ptamWrapper;
 	EstimationNode* node;
 
 	bool resetRequested;
@@ -123,7 +123,7 @@ private:
 
 public:
 
-    MapView(DroneKalmanFilter* f, PTAMMWrapper *p, EstimationNode* nde);
+	MapView(DroneKalmanFilter* f, PTAMWrapper* p, EstimationNode* nde);
 	~MapView(void);
 
 	bool handleCommand(std::string s);

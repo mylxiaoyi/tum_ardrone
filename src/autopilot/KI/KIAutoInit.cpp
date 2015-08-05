@@ -54,7 +54,7 @@ KIAutoInit::~KIAutoInit(void)
 }
 
 
-bool KIAutoInit::update(const tum_ardrone::filter_stateConstPtr statePtr)
+bool KIAutoInit::update(const myros_ardrone::filter_stateConstPtr statePtr)
 {
 	// no PTAM initialization, just takeoff.
 	if(!resetMap)

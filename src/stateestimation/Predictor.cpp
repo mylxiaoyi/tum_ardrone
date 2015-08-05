@@ -124,9 +124,9 @@ void Predictor::predictOneStep(ardrone_autonomy::Navdata* nfo)
 	y += cos(yawRad)*dxDrone-sin(yawRad)*dyDrone;
 
 	// height
-	if(abs(z - (double)nfo->altd*0.001) > 0.12)
+    if(std::abs(z - (double)nfo->altd*0.001) > 0.12)
 	{
-		if(std::abs(z - (double)nfo->altd*0.001) > abs(zCorruptedJump))
+        if(std::abs(z - (double)nfo->altd*0.001) > std::abs(zCorruptedJump))
 			zCorruptedJump = z - (double)nfo->altd*0.001;
 		zCorrupted = true;
 	}

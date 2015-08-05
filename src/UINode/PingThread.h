@@ -24,7 +24,7 @@
  
 #include "cvd/thread.h"
 
-class tum_ardrone_gui;
+class myros_ardrone_gui;
 class RosThread;
 
 
@@ -49,8 +49,8 @@ private:
     double p500;
     double p20000;
 
-    static const double p500Default = 25;
-    static const double p20000Default = 50;
+    static constexpr double p500Default = 25;
+    static constexpr double p20000Default = 50;
 public:
 	PingThread(void);
 	~PingThread(void);
@@ -63,7 +63,7 @@ public:
 	// start and stop pinging
 	void setEnabled(bool);
 
-	tum_ardrone_gui* gui;
+    myros_ardrone_gui* gui;
 	RosThread* rosThread;
 	bool measure;
 };

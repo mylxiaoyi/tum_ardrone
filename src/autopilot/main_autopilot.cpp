@@ -37,12 +37,12 @@ int main(int argc, char **argv)
 {
   ros::init(argc, argv, "drone_autopilot");
 
-  ROS_INFO("Started TUM ArDrone Autopilot Node.");
+  ROS_INFO("Started ROS ArDrone Autopilot Node.");
 
   ControlNode controlNode;
 
-  dynamic_reconfigure::Server<tum_ardrone::AutopilotParamsConfig> srv;
-  dynamic_reconfigure::Server<tum_ardrone::AutopilotParamsConfig>::CallbackType f;
+  dynamic_reconfigure::Server<myros_ardrone::AutopilotParamsConfig> srv;
+  dynamic_reconfigure::Server<myros_ardrone::AutopilotParamsConfig>::CallbackType f;
   f = boost::bind(&ControlNode::dynConfCb, &controlNode, _1, _2);
   srv.setCallback(f);
 

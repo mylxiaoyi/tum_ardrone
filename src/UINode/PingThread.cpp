@@ -24,7 +24,7 @@
 #include <iostream>
 #include <stdio.h>
 #include "RosThread.h"
-#include "tum_ardrone_gui.h"
+#include "myros_ardrone_gui.h"
 
 PingThread::PingThread()
 {

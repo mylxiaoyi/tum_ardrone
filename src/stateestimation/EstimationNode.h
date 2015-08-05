@@ -40,7 +40,7 @@
 
 class DroneKalmanFilter;
 class MapView;
-class PTAMMWrapper;
+class PTAMWrapper;
 
 struct EstimationNode
 {
@@ -55,9 +55,9 @@ private:
 	// comm with ptam
 	//ros::Subscriber slam_info_sub; // ptam info (tracking quality) etc.
 	//tf::TransformListener tf_sub;
-	ros::Subscriber tum_ardrone_sub;
-	ros::Publisher tum_ardrone_pub;
-	static pthread_mutex_t tum_ardrone_CS;
+    ros::Subscriber myros_ardrone_sub;
+    ros::Publisher myros_ardrone_pub;
+    static pthread_mutex_t myros_ardrone_CS;
 
 	// output
 	ros::Publisher dronepose_pub;
@@ -93,7 +93,7 @@ private:
 public:
 	// filter
 	DroneKalmanFilter* filter;
-    PTAMMWrapper* ptammWrapper;
+	PTAMWrapper* ptamWrapper;
 	MapView* mapView;
 	std::string packagePath;
 

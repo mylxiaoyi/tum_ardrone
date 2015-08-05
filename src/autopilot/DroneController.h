@@ -27,7 +27,7 @@
 #include "TooN/se3.h"
 #include <queue>
 #include "geometry_msgs/Twist.h"
-#include "tum_ardrone/filter_state.h"
+#include "myros_ardrone/filter_state.h"
 
 class ControlNode;
 
@@ -87,7 +87,7 @@ private:
 public:
 
 	// generates and sends a new control command to the drone, based on the currently active command ant the drone's position.
-	ControlCommand update(tum_ardrone::filter_stateConstPtr);
+    ControlCommand update(myros_ardrone::filter_stateConstPtr);
 
 	ControlNode* node;
 

@@ -18,7 +18,7 @@
  *  along with tum_ardrone.  If not, see <http://www.gnu.org/licenses/>.
  */
  
-#include "tum_ardrone_gui.h"
+#include "myros_ardrone_gui.h"
 #include "RosThread.h"
 #include "PingThread.h"
 
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 
     // UI
     QApplication a(argc, argv);
-    tum_ardrone_gui w;
+    myros_ardrone_gui w;
 
     // make them communicate with each other
     t.gui = &w;

@@ -24,7 +24,7 @@
  
 
 #include "cvd/thread.h"
-#include "tum_ardrone/filter_state.h"
+#include "myros_ardrone/filter_state.h"
 #include "std_msgs/String.h"
 #include "geometry_msgs/Twist.h"
 #include "ardrone_autonomy/Navdata.h"
@@ -33,7 +33,7 @@
 #include "std_srvs/Empty.h"
 #include "std_msgs/Empty.h"
 
-class tum_ardrone_gui;
+class myros_ardrone_gui;
 
 struct ControlCommand
 {
@@ -61,8 +61,8 @@ private:
 	ros::Subscriber dronepose_sub;
 	ros::Publisher vel_pub;
 	ros::Subscriber vel_sub;
-	ros::Subscriber tum_ardrone_sub;
-	ros::Publisher tum_ardrone_pub;
+    ros::Subscriber myros_ardrone_sub;
+    ros::Publisher myros_ardrone_pub;
 	ros::Subscriber navdata_sub;
 	ros::Subscriber joy_sub;
 	ros::Publisher takeoff_pub;
@@ -96,11 +96,11 @@ public:
 	void startSystem();
 	void stopSystem();
 
-	tum_ardrone_gui* gui;
+    myros_ardrone_gui* gui;
 
 
 	// callbacks
-	void droneposeCb(const tum_ardrone::filter_stateConstPtr statePtr);
+    void droneposeCb(const myros_ardrone::filter_stateConstPtr statePtr);
 	void comCb(const std_msgs::StringConstPtr str);
 	void velCb(const geometry_msgs::TwistConstPtr vel);
 	void navdataCb(const ardrone_autonomy::NavdataConstPtr navdataPtr);

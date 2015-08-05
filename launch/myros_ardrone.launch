@@ -1,0 +1,8 @@
+<launch>
+  <node name="myros_drone_stateestimation" pkg="myros_ardrone" type="myros_drone_stateestimation">
+  </node>
+  <node name="myros_drone_autopilot" pkg="myros_ardrone" type="myros_drone_autopilot">
+  </node>
+  <node name="myros_drone_gui" pkg="myros_ardrone" type="myros_drone_gui">
+  </node>
+</launch>

@@ -23,7 +23,7 @@
 #include "cvd/thread.h"
 #include "ros/ros.h"
 #include "ros/callback_queue.h"
-#include "tum_ardrone_gui.h"
+#include "myros_ardrone_gui.h"
 #include "stdio.h"
 #include "std_msgs/Empty.h"
 
@@ -69,7 +69,7 @@ void RosThread::takeoffCb(std_msgs::EmptyConstPtr)
 	gui->addLogLine("sent: Takeoff");
 }
 
-void RosThread::droneposeCb(const tum_ardrone::filter_stateConstPtr statePtr)
+void RosThread::droneposeCb(const myros_ardrone::filter_stateConstPtr statePtr)
 {
 	dronePoseCount++;
 }
@@ -169,8 +169,8 @@ void RosThread::run()
     vel_pub	   = nh_.advertise<geometry_msgs::Twist>(nh_.resolveName("cmd_vel"),1);
     vel_sub	   = nh_.subscribe(nh_.resolveName("cmd_vel"),50, &RosThread::velCb, this);
 
-    tum_ardrone_pub	   = nh_.advertise<std_msgs::String>(nh_.resolveName("tum_ardrone/com"),50);
-    tum_ardrone_sub	   = nh_.subscribe(nh_.resolveName("tum_ardrone/com"),50, &RosThread::comCb, this);
+    myros_ardrone_pub	   = nh_.advertise<std_msgs::String>(nh_.resolveName("myros_ardrone/com"),50);
+    myros_ardrone_sub	   = nh_.subscribe(nh_.resolveName("myros_ardrone/com"),50, &RosThread::comCb, this);
 
 
     dronepose_sub	   = nh_.subscribe(nh_.resolveName("ardrone/predictedPose"),50, &RosThread::droneposeCb, this);
@@ -236,7 +236,7 @@ void RosThread::publishCommand(std::string c)
 	std_msgs::String s;
 	s.data = c.c_str();
 	pthread_mutex_lock(&send_CS);
-	tum_ardrone_pub.publish(s);
+    myros_ardrone_pub.publish(s);
 	pthread_mutex_unlock(&send_CS);
 }
 

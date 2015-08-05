@@ -7,6 +7,9 @@ TARGET = UINode
 INCLUDEPATH += .
 
 # Input
-HEADERS += PingThread.h RosThread.h tum_ardrone_gui.h ../HelperFunctions.h
-FORMS += tum_ardrone_gui.ui
-SOURCES += main_GUI.cpp PingThread.cpp RosThread.cpp tum_ardrone_gui.cpp
+HEADERS += PingThread.h RosThread.h ../HelperFunctions.h \
+    myros_ardrone_gui.h
+FORMS += \
+    myros_ardrone_gui.ui
+SOURCES += main_GUI.cpp PingThread.cpp RosThread.cpp \
+    myros_ardrone_gui.cpp

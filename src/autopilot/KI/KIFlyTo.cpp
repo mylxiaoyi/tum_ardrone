@@ -55,7 +55,7 @@ KIFlyTo::~KIFlyTo(void)
 }
 
 
-bool KIFlyTo::update(const tum_ardrone::filter_stateConstPtr statePtr)
+bool KIFlyTo::update(const myros_ardrone::filter_stateConstPtr statePtr)
 {
 	if(!targetSet)
 		controller->setTarget(checkpoint);

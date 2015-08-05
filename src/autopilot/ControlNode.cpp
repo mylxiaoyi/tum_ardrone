@@ -27,7 +27,7 @@
 
 #include "geometry_msgs/Twist.h"
 #include "../HelperFunctions.h"
-#include "tum_ardrone/filter_state.h"
+#include "myros_ardrone/filter_state.h"
 #include "std_msgs/String.h"
 #include <sys/stat.h>
 #include <string>
@@ -38,7 +38,7 @@
 #include "KI/KILand.h"
 #include "KI/KIProcedure.h"
 
-using namespace tum_ardrone;
+using namespace myros_ardrone;
 using namespace std;
 
 pthread_mutex_t ControlNode::logControl_CS = PTHREAD_MUTEX_INITIALIZER;
@@ -48,12 +48,12 @@ ControlNode::ControlNode()
 {
     control_channel = nh_.resolveName("cmd_vel");
     dronepose_channel = nh_.resolveName("ardrone/predictedPose");
-    command_channel = nh_.resolveName("tum_ardrone/com");
+    command_channel = nh_.resolveName("myros_ardrone/com");
     takeoff_channel = nh_.resolveName("ardrone/takeoff");
     land_channel = nh_.resolveName("ardrone/land");
     toggleState_channel = nh_.resolveName("ardrone/reset");
 
-    packagePath = ros::package::getPath("my_ardrone");
+    packagePath = ros::package::getPath("myros_ardrone");
 
 	std::string val;
 	float valFloat;
@@ -75,8 +75,8 @@ ControlNode::ControlNode()
 	// channels
 	dronepose_sub = nh_.subscribe(dronepose_channel, 10, &ControlNode::droneposeCb, this);
 	vel_pub	   = nh_.advertise<geometry_msgs::Twist>(control_channel,1);
-	tum_ardrone_pub	   = nh_.advertise<std_msgs::String>(command_channel,50);
-	tum_ardrone_sub	   = nh_.subscribe(command_channel,50, &ControlNode::comCb, this);
+    myros_ardrone_pub	   = nh_.advertise<std_msgs::String>(command_channel,50);
+    myros_ardrone_sub	   = nh_.subscribe(command_channel,50, &ControlNode::comCb, this);
 	takeoff_pub	   = nh_.advertise<std_msgs::Empty>(takeoff_channel,1);
 	land_pub	   = nh_.advertise<std_msgs::Empty>(land_channel,1);
 	toggleState_pub	   = nh_.advertise<std_msgs::Empty>(toggleState_channel,1);
@@ -114,7 +114,7 @@ ControlNode::~ControlNode()
 }
 
 pthread_mutex_t ControlNode::commandQueue_CS = PTHREAD_MUTEX_INITIALIZER;
-void ControlNode::droneposeCb(const tum_ardrone::filter_stateConstPtr statePtr)
+void ControlNode::droneposeCb(const myros_ardrone::filter_stateConstPtr statePtr)
 {
 	// do controlling
 	pthread_mutex_lock(&commandQueue_CS);
@@ -142,7 +142,7 @@ void ControlNode::droneposeCb(const tum_ardrone::filter_stateConstPtr statePtr)
 
 // pops next command(s) from queue (until one is found thats not "done" yet).
 // assumes propery of command queue lock exists (!)
-void ControlNode::popNextCommand(const tum_ardrone::filter_stateConstPtr statePtr)
+void ControlNode::popNextCommand(const myros_ardrone::filter_stateConstPtr statePtr)
 {
 	// should actually not happen., but to make shure:
 	// delete existing KI.
@@ -372,7 +372,7 @@ void ControlNode::Loop()
 		}
 	}
 }
-void ControlNode::dynConfCb(tum_ardrone::AutopilotParamsConfig &config, uint32_t level)
+void ControlNode::dynConfCb(myros_ardrone::AutopilotParamsConfig &config, uint32_t level)
 {
 	controller.Ki_gaz = config.Ki_gaz;
 	controller.Kd_gaz = config.Kd_gaz;
@@ -394,14 +394,14 @@ void ControlNode::dynConfCb(tum_ardrone::AutopilotParamsConfig &config, uint32_t
 	controller.rise_fac = config.rise_fac;
 }
 
-pthread_mutex_t ControlNode::tum_ardrone_CS = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t ControlNode::myros_ardrone_CS = PTHREAD_MUTEX_INITIALIZER;
 void ControlNode::publishCommand(std::string c)
 {
 	std_msgs::String s;
 	s.data = c.c_str();
-	pthread_mutex_lock(&tum_ardrone_CS);
-	tum_ardrone_pub.publish(s);
-	pthread_mutex_unlock(&tum_ardrone_CS);
+    pthread_mutex_lock(&myros_ardrone_CS);
+    myros_ardrone_pub.publish(s);
+    pthread_mutex_unlock(&myros_ardrone_CS);
 }
 
 
@@ -482,7 +482,7 @@ void ControlNode::stopControl() {
 	ROS_INFO("STOP CONTROLLING!");
 }
 
-void ControlNode::updateControl(const tum_ardrone::filter_stateConstPtr statePtr) {
+void ControlNode::updateControl(const myros_ardrone::filter_stateConstPtr statePtr) {
 	if (currentKI->update(statePtr) && commandQueue.size() > 0) {
 		delete currentKI;
 		currentKI = NULL;
