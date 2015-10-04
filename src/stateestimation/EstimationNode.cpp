@@ -84,7 +84,7 @@ EstimationNode::EstimationNode()
 	vel_sub          = nh_.subscribe(control_channel,10, &EstimationNode::velCb, this);
 	vid_sub          = nh_.subscribe(video_channel,10, &EstimationNode::vidCb, this);
 
-	dronepose_pub	   = nh_.advertise<tum_ardrone::filter_state>(output_channel,1);
+    dronepose_pub	   = nh_.advertise<myros_ardrone::filter_state>(output_channel,1);
 
     myros_ardrone_pub	   = nh_.advertise<std_msgs::String>(command_channel,50);
     myros_ardrone_sub	   = nh_.subscribe(command_channel,50, &EstimationNode::comCb, this);
