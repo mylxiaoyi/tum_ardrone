@@ -123,7 +123,7 @@ void myros_ardrone_gui::ToggleCamClicked()
 {
 	rosThread->sendToggleCam();
 }
-void myros_ardrone_gui::FlattrimClicked()
+void myros_ardrone_gui::FlatTrimClicked()
 {
 	rosThread->sendFlattrim();
 }

@@ -427,10 +427,15 @@ void PTAMWrapper::HandleFrame()
     pthread_mutex_lock( &filter->filter_CS );
     if(filter->usePTAM && isGoodCount >= 3)
     {
+        //ROS_INFO("filter->usePTAM");
         filter->addPTAMObservation(PTAMResult,mimFrameTime_workingCopy-filter->delayVideo);
     }
     else
+    {
+        //ROS_INFO("not filter->usePTAM");
+        // filter->usePTAM is false
         filter->addFakePTAMObservation(mimFrameTime_workingCopy-filter->delayVideo);
+    }
 
     filterPosePostPTAM = filter->getCurrentPoseSpeedAsVec();
     pthread_mutex_unlock( &filter->filter_CS );
@@ -1087,6 +1092,8 @@ void PTAMWrapper::on_mouse_down(CVD::ImageRef where, int state, int button)
         snprintf(bf,100,"c moveByRel 0 0 %.3f %.3f",y,x*45);
 
     printf("hello in PTAMWrapper::on_mouse_down: %s\n", bf);
+    TooN::SE3<> ptamResultSE3 = mpTracker->GetCurrentPose();
+    std::cout << "ptamResultSE3 = " << ptamResultSE3 << std::endl;
 
     node->publishCommand(bf);
 }

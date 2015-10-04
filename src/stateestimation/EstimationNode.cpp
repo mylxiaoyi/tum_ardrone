@@ -267,7 +267,7 @@ void EstimationNode::Loop()
 		  // -------------- 3. get predicted pose and publish! ---------------
 		  // get filter state msg
 		  pthread_mutex_lock( &filter->filter_CS );
-		  tum_ardrone::filter_state s = filter->getPoseAt(ros::Time().now() + predTime);
+          myros_ardrone::filter_state s = filter->getPoseAt(ros::Time().now() + predTime);
 		  pthread_mutex_unlock( &filter->filter_CS );
 
 		  // fill metadata
@@ -300,7 +300,7 @@ void EstimationNode::Loop()
 		  pub_rate.sleep();
 	  }
 }
-void EstimationNode::dynConfCb(tum_ardrone::StateestimationParamsConfig &config, uint32_t level)
+void EstimationNode::dynConfCb(myros_ardrone::StateestimationParamsConfig &config, uint32_t level)
 {
 	if(!filter->allSyncLocked && config.PTAMSyncLock)
 		ROS_WARN("Ptam Sync has been disabled. This fixes scale etc.");

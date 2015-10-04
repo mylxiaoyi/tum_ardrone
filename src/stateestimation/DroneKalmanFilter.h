@@ -30,7 +30,7 @@
 #include <geometry_msgs/TwistStamped.h>
 #include <pthread.h>
 #include "../HelperFunctions.h"
-#include "tum_ardrone/filter_state.h"
+#include "myros_ardrone/filter_state.h"
 
 struct EstimationNode;
 
@@ -356,7 +356,7 @@ public:
 
 	// gets current pose and variances (up to where predictUpTo has been called)
 	TooN::Vector<6> getCurrentPose();
-	tum_ardrone::filter_state getCurrentPoseSpeed();
+    myros_ardrone::filter_state getCurrentPoseSpeed();
 	TooN::Vector<10> getCurrentPoseSpeedAsVec();
 	TooN::Vector<10> getCurrentPoseSpeedVariances();
 	TooN::Vector<6> getCurrentPoseVariances();
@@ -414,7 +414,7 @@ public:
 	// new ROS interface functions
 	void addPTAMObservation(TooN::Vector<6> trans, int time);
 	void addFakePTAMObservation(int time);
-	tum_ardrone::filter_state getPoseAt(ros::Time t, bool useControlGains = true);
+    myros_ardrone::filter_state getPoseAt(ros::Time t, bool useControlGains = true);
 	TooN::Vector<10> getPoseAtAsVec(int timestamp, bool useControlGains = true);
 
 };

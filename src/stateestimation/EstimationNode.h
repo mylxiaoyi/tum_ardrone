@@ -34,7 +34,7 @@
 #include "tum_ardrone/filter_state.h"
 #include "std_msgs/String.h"
 #include <dynamic_reconfigure/server.h>
-#include "tum_ardrone/StateestimationParamsConfig.h"
+#include "myros_ardrone/StateestimationParamsConfig.h"
 #include "TooN/se3.h"
 
 
@@ -106,7 +106,7 @@ public:
 	void velCb(const geometry_msgs::TwistConstPtr velPtr);
 	void vidCb(const sensor_msgs::ImageConstPtr img);
 	void comCb(const std_msgs::StringConstPtr str);
-	void dynConfCb(tum_ardrone::StateestimationParamsConfig &config, uint32_t level);
+    void dynConfCb(myros_ardrone::StateestimationParamsConfig &config, uint32_t level);
 
 	// main pose-estimation loop
 	void Loop();

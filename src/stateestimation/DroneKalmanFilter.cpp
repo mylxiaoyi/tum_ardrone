@@ -836,9 +836,9 @@ TooN::Vector<6> DroneKalmanFilter::getCurrentPose()
 	return TooN::makeVector(x.state[0], y.state[0], z.state[0], roll.state, pitch.state, yaw.state[0]);
 }
 
-tum_ardrone::filter_state DroneKalmanFilter::getCurrentPoseSpeed()
+myros_ardrone::filter_state DroneKalmanFilter::getCurrentPoseSpeed()
 {
-	tum_ardrone::filter_state s;
+    myros_ardrone::filter_state s;
 	s.x = x.state[0];
 	s.y = y.state[0];
 	s.z = z.state[0];
@@ -938,7 +938,7 @@ void DroneKalmanFilter::addFakePTAMObservation(int time)
 
 	lastPosesValid = false;
 }
-tum_ardrone::filter_state DroneKalmanFilter::getPoseAt(ros::Time t, bool useControlGains)
+myros_ardrone::filter_state DroneKalmanFilter::getPoseAt(ros::Time t, bool useControlGains)
 {
 	// make shallow copy
 	DroneKalmanFilter scopy = DroneKalmanFilter(*this);
